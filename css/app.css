@@ -1,0 +1,79 @@
+body {
+  background-color: #363026; }
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto; }
+
+*, html, body, p, a, li, ul, div {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Asar", serif;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+h5 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+.title-head {
+  text-transform: capitalize;
+  color: #ccb8a3;
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+.condensed {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.heading {
+  color: #ffa926; }
+
+.light-text {
+  color: #F8F8F8; }
+
+.dark-text {
+  color: #101010; }
+
+.caption {
+  color: #ccb8a3;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.text-primary {
+  color: #ffa926; }
+
+a {
+  color: #ffa926; }
+
+a:hover {
+  color: #e68f0b; }
+
+header {
+  background-color: #101010;
+  height: 30px; }
+
+/*# sourceMappingURL=app.css.map */

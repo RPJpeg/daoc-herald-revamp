@@ -1,0 +1,64 @@
+@mixin clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+// example
+// .box
+//   @include clearfix
+
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+// .box
+      @include border-radius(10px)
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+@mixin font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+// example
+// p
+//   @include font-size(14px)
+
+@mixin transition($duration)
+  -webkit-transition: $duration
+  -moz-transition: $duration
+  -ms-transition: $duration
+  -o-transition: $duration
+  transition: $duration
+
+// a
+//   @include transition(.2s)
+//   &:hover
+//     color: blue
+
+@mixin bp-desktop
+  @media only screen and (max-width: 1280px)
+    @content
+
+@mixin bp-tablet
+  @media only screen and (max-width: 768px)
+    @content
+
+@mixin bp-phone
+  @media only screen and (max-width: 320px)
+    @content
+
+// example
+// .sidebar
+//   width: 60%
+//   float: left
+//   margin: 0 2% 0 0
+//   @include bp-phone
+//     width: 100%
+//     float: none
+//     margin: 0
