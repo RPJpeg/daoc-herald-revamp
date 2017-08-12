@@ -1,9 +1,19 @@
 body {
-  background-color: #363026; }
+  background-color: #363026;
+  z-index: 2; }
 
-.wrapper {
-  width: 1024px;
-  margin: 0 auto; }
+.background-overlay {
+  background-image: url(../images/background-v1.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none; }
 
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
@@ -72,8 +82,151 @@ a {
 a:hover {
   color: #e68f0b; }
 
+a:focus, a:active {
+  text-decoration: none;
+  color: #e68f0b; }
+
 header {
-  background-color: #101010;
-  height: 30px; }
+  height: 36px;
+  box-shadow: 1px 1px 1px #262020; }
+
+.yellow-header {
+  background-color: #f29c18;
+  margin-bottom: 24px; }
+
+.logo-box {
+  margin: 0 auto;
+  width: 200px;
+  height: auto; }
+  @media only screen and (min-width: 768px) {
+    .logo-box {
+      width: 300px; } }
+  @media only screen and (min-width: 992px) {
+    .logo-box {
+      margin: 0;
+      transform: translateX(-15px); } }
+  .logo-box .daoc-logo {
+    width: 100%;
+    height: auto; }
+
+.hero-links {
+  display: inline;
+  width: 100%; }
+  .hero-links li {
+    padding-left: 24px;
+    display: inline;
+    float: right;
+    transform: translateX(15px);
+    font-size: 16px;
+    font-size: 1rem; }
+    @media only screen and (min-width: 992px) {
+      .hero-links li {
+        font-size: 20px;
+        font-size: 1.25rem; } }
+
+.search-bar {
+  margin-top: 16px;
+  width: 100%;
+  transform: translateX(15px); }
+  @media only screen and (min-width: 992px) {
+    .search-bar {
+      margin-top: 24px; } }
+  .search-bar input {
+    box-shadow: 1px 1px 1px #262020;
+    background-color: #bfbfbf;
+    color: #101010; }
+  .search-bar input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 143, 11, 0.6);
+    border: 1px solid #f29c18; }
+  .search-bar i {
+    color: #f29c18;
+    transform: translate(-24px, 26px); }
+
+.main-nav-bar {
+  margin-top: 28px;
+  padding: 0;
+  width: 100%; }
+
+.main-nav {
+  width: 100%;
+  height: 64px;
+  background-color: #262020;
+  box-shadow: 1px 1px 6px #1e1b15;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; }
+  .main-nav a {
+    color: #ffa926;
+    font-weight: 600;
+    border-right: 0.5px solid #363026;
+    border-left: 0.5px solid #1e1b15;
+    width: 15%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main-nav a:last-child {
+      border-right: none; }
+    .main-nav a:first-child {
+      border-left: none; }
+  .main-nav a:hover {
+    text-decoration: none; }
+  .main-nav .home {
+    width: 9%; }
+    .main-nav .home i {
+      padding-top: 8px; }
+  .main-nav li {
+    display: inline;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    @media only screen and (min-width: 768px) {
+      .main-nav li {
+        font-size: 16px;
+        font-size: 1rem; } }
+    @media only screen and (min-width: 992px) {
+      .main-nav li {
+        font-size: 20px;
+        font-size: 1.25rem; } }
+  .main-nav a:hover li {
+    color: #F8F8F8;
+    text-decoration: none; }
+
+.mega-menu {
+  width: 100%;
+  height: auto;
+  background-color: #262020;
+  box-shadow: 1px 1px 6px #1e1b15;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+  .mega-menu .mega-menu-list {
+    width: 20%;
+    margin: 0;
+    pading: 40px;
+    display: inline-block; }
+  .mega-menu .mega-menu-list-item {
+    text-align: left;
+    font-weight: 300; }
+
+.rotated {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.selected {
+  background-color: #3d372d; }
 
 /*# sourceMappingURL=app.css.map */
