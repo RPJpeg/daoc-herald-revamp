@@ -1,72 +1,92 @@
-.main-nav-bar
-  margin-top: 28px
-  padding: 0
-  width: 100%
+.nav-container
+  position: relative
 
-.main-nav
-  width: 100%
-  height: 64px
-  background-color: $darkBrown
-  box-shadow: 1px 1px 6px $darkerBrown
-  display: flex
-  flex-wrap: nowrap
-  align-items: center
-  justify-content: center
-  a
-    color: $lightGold
-    font-weight: 600
-    border-right: 0.5px solid $brown
-    border-left: 0.5px solid $darkerBrown
-    width: 15%
-    height: 80%
-    display: flex
-    align-items: center
-    justify-content: center
-    &:last-child
-      border-right: none
-    &:first-child
+  .navigation-bar
+    background-color: $darkBrown
+    box-shadow: 1px 1px 6px $darkerBrown
+    width: 100%
+    height: 60px
+
+  .navigation-home
+    margin-top: 24px
+
+    .nav-buttons
+      margin: 0
+      padding: 0
+
+    .nav-bar-button
+      height: 60px
+      width: 12%
+      border-right: 0.5px solid $lightBrown
+      &:last-child
+        border-right: none
+      border-left: 0.5px solid $darkerBrown
+      &:first-child
+        border-right: none
+      display: flex
+      justify-content: center
+      align-items: center
+      p
+        @include font-size(14px)
+        font-weight: 300
+        letter-spacing: 1px
+        @include transition(0.2s)
+        @include bp-small
+          @include font-size(16px)
+        @include bp-medium
+          @include font-size(18px)
+    .nav-bar-button:hover > p
+      color: $offWhite
+    .nav-bar-button:hover > i
+      color: $offWhite
+
+    .nav-home-button
+      width: 20%
       border-left: none
-  a:hover
-    text-decoration: none
+      i
+        @include transition(0.2s)
+        @include bp-small
+          transform: scale(1.3,1.3)
+        @include bp-medium
+          transform: scale(1.5,1.5)
 
-  .home
-    width: 9%
-    i
-      padding-top: 8px
-  li
-    display: inline
-    text-align: center
-    padding: 0 10px
-    @include font-size(12px)
-    font-weight: 400
-    letter-spacing: 1px
-    @include transition(0.2s)
-    @include bp-small
-      @include font-size(16px)
-    @include bp-medium
-      @include font-size(20px)
+    .logo-box
+      width: 200px
+      position: absolute
+      left: -16px
+      top: -4px
+      @include bp-small
+        width: 210px
+        left: -16px
+        top: -6px
+      @include bp-medium
+        width: 272px
+        left: -16px
+        top: -14px
+      @include bp-large
+        width: 320px
+        left: -16px
+        top: -20px
+      img
+        width: 100%
+        position: relative
+        z-index: 12
 
-  a:hover li
-    color: $offWhite
-    text-decoration: none
+  .mega-menu
+    display: none
+    left: 0
+    top: 100
+    position: absolute
+    width: calc(100% - 30px)
+    margin-left: 15px
+    height: 300px
+    box-shadow: 1px 1px 6px $darkerBrown
+    background-color: $darkBrown
+    padding: 0 15px
+    z-index: 4
 
-.mega-menu
-  width: 100%
-  height: auto
-  background-color: $darkBrown
-  box-shadow: 1px 1px 6px $darkerBrown
-  @include border-radius(0px)
-  .mega-menu-list
-    width: 20%
-    margin: 0
-    pading: 40px
-    display: inline-block
-  .mega-menu-list-item
-    text-align: left
-    font-weight: 300
+  .carot-rotated
+    @include rotate($val: 180deg)
 
-.rotated
-  @include rotate($val: 180deg)
-
-.selected
-  background-color: $lightBrown
+  .menu-selected
+    background-color: $lightBrown

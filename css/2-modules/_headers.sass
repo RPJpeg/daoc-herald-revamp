@@ -1,0 +1,28 @@
+.header-home
+  background-color: $gold
+  margin-bottom: 10px
+  height: 36px
+  box-shadow: 1px 1px 1px $darkBrown
+
+  .hero-links
+    margin-right: 4px
+    a
+      color: $brown
+    a:hover
+      color: $red
+      text-decoration: none
+    li
+      display: inline
+      line-height: 2.4
+      padding: 12px 0
+      font-weight: 400
+      &:last-child
+        margin-left: 12px
+      @include font-size(16px)
+      @include bp-small
+        &:last-child
+          margin-left: 18px
+      @include bp-medium
+        &:last-child
+          margin-left: 24px
+        @include font-size(18px)
