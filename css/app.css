@@ -3,7 +3,7 @@ body {
   z-index: 1; }
 
 .background-overlay {
-  background-image: url(../images/background-v1.png);
+  background-image: url(../images/background-v2.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -87,10 +87,14 @@ a:focus, a:active {
   color: #e68f0b; }
 
 .header-home {
-  background-color: #f29c18;
-  margin-bottom: 10px;
-  height: 36px;
-  box-shadow: 1px 1px 1px #262020; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .header-home {
+      display: block;
+      background-color: #f29c18;
+      margin-bottom: 0;
+      height: 36px;
+      box-shadow: 1px 1px 1px #262020; } }
   .header-home .hero-links {
     margin-right: 4px; }
     .header-home .hero-links a {
@@ -117,44 +121,152 @@ a:focus, a:active {
           .header-home .hero-links li:last-child {
             margin-left: 24px; } }
 
-.home-hero .search-bar {
-  width: 300px; }
-  .home-hero .search-bar input {
-    box-shadow: 1px 1px 1px #262020;
-    background-color: #bfbfbf;
-    color: #101010; }
-  .home-hero .search-bar input:focus {
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 143, 11, 0.6);
-    border: 1px solid #f29c18; }
-  .home-hero .search-bar i {
+.home-hero {
+  height: 36px;
+  position: relative;
+  margin-bottom: 0;
+  z-index: 30; }
+  @media only screen and (min-width: 768px) {
+    .home-hero {
+      display: block; } }
+  .home-hero .search-bar {
+    width: 38vw;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 68px; }
+    .home-hero .search-bar input {
+      margin: 0;
+      box-shadow: 1px 1px 1px #262020;
+      background-color: #bfbfbf;
+      color: #101010;
+      transform: translateY(-16px);
+      height: 28px; }
+    .home-hero .search-bar input:focus {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 143, 11, 0.6);
+      border: 1px solid #f29c18; }
+    .home-hero .search-bar i {
+      color: #f29c18;
+      transform: translate(-24px, 10px);
+      top: 18px; }
+    @media only screen and (min-width: 768px) {
+      .home-hero .search-bar {
+        display: block;
+        width: 250px;
+        height: 36px;
+        top: 10px;
+        right: 16px; } }
+
+.mobile-nav {
+  height: 60px;
+  box-shadow: 1px 1px 6px #1e1b15;
+  background-color: #262020;
+  z-index: 20;
+  border: 0; }
+  .mobile-nav .mobile-nav-button {
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .mobile-nav .mobile-nav-button > i:hover {
+    color: #F8F8F8; }
+  .mobile-nav img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    z-index: 20; }
+  .mobile-nav i {
     color: #f29c18;
-    transform: translate(-24px, 26px); }
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  @media only screen and (min-width: 768px) {
+    .mobile-nav {
+      display: none; } }
+
+.mobile-mega-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  box-shadow: 1px 1px 6px #1e1b15;
+  background-color: #262020;
+  padding: 15px;
+  z-index: 19; }
+  .mobile-mega-menu ul {
+    list-style: none;
+    margin-bottom: 16px; }
+  .mobile-mega-menu li {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #ffa926;
+    padding-left: 24px;
+    margin-top: 8px; }
+  .mobile-mega-menu .menu-head {
+    font-size: 20px;
+    font-size: 1.25rem;
+    color: #F8F8F8;
+    padding-left: 8px;
+    font-weight: 400;
+    margin-top: 16px; }
+  .mobile-mega-menu a {
+    text-decoration: none; }
+  .mobile-mega-menu a > li:hover {
+    text-decoration: none;
+    color: #e68f0b; }
+
+.mobile-search-bar input {
+  width: 95%;
+  margin: 0;
+  box-shadow: 1px 1px 1px #262020;
+  background-color: #bfbfbf;
+  color: #101010;
+  float: right; }
+.mobile-search-bar input:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 143, 11, 0.6);
+  border: 1px solid #f29c18; }
+.mobile-search-bar i {
+  color: #f29c18;
+  float: left;
+  margin-top: 10px; }
 
 .nav-container {
-  position: relative; }
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .nav-container {
+      position: relative;
+      display: block; } }
   .nav-container .navigation-bar {
     background-color: #262020;
     box-shadow: 1px 1px 6px #1e1b15;
     width: 100%;
-    height: 60px; }
-  .nav-container .navigation-home {
-    margin-top: 24px; }
-    .nav-container .navigation-home .nav-buttons {
-      margin: 0;
-      padding: 0; }
-    .nav-container .navigation-home .nav-bar-button {
+    height: 60px;
+    margin-top: 16px;
+    background-image: url("../images/distress.png");
+    background-repeat: repeat-x; }
+    .nav-container .navigation-bar .nav-bar-button {
       height: 60px;
       width: 12%;
-      border-right: 0.5px solid #3d372d;
-      border-left: 0.5px solid #1e1b15;
+      border-left: 0.5px solid #3d372d;
+      border-right: 0.5px solid #1e1b15;
       display: flex;
       justify-content: center;
-      align-items: center; }
-      .nav-container .navigation-home .nav-bar-button:last-child {
-        border-right: none; }
-      .nav-container .navigation-home .nav-bar-button:first-child {
-        border-right: none; }
-      .nav-container .navigation-home .nav-bar-button p {
+      align-items: center;
+      background-image: url("../images/distress.png");
+      background-repeat: repeat-x; }
+      .nav-container .navigation-bar .nav-bar-button p {
         font-size: 14px;
         font-size: 0.875rem;
         font-weight: 300;
@@ -165,53 +277,70 @@ a:focus, a:active {
         -o-transition: 0.2s;
         transition: 0.2s; }
         @media only screen and (min-width: 768px) {
-          .nav-container .navigation-home .nav-bar-button p {
+          .nav-container .navigation-bar .nav-bar-button p {
+            font-size: 14px;
+            font-size: 0.875rem; } }
+        @media only screen and (min-width: 992px) {
+          .nav-container .navigation-bar .nav-bar-button p {
             font-size: 16px;
             font-size: 1rem; } }
-        @media only screen and (min-width: 992px) {
-          .nav-container .navigation-home .nav-bar-button p {
+        @media only screen and (min-width: 1200px) {
+          .nav-container .navigation-bar .nav-bar-button p {
             font-size: 18px;
             font-size: 1.125rem; } }
-    .nav-container .navigation-home .nav-bar-button:hover > p {
+    .nav-container .navigation-bar .nav-bar-button:hover > p {
       color: #F8F8F8; }
-    .nav-container .navigation-home .nav-bar-button:hover > i {
+    .nav-container .navigation-bar .nav-bar-button:hover > i {
       color: #F8F8F8; }
-    .nav-container .navigation-home .nav-home-button {
-      width: 20%;
+    .nav-container .navigation-bar #nav-game-button {
       border-left: none; }
-      .nav-container .navigation-home .nav-home-button i {
+    .nav-container .navigation-bar .nav-home-button {
+      width: 20%;
+      border: none; }
+      .nav-container .navigation-bar .nav-home-button i {
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
         @media only screen and (min-width: 768px) {
-          .nav-container .navigation-home .nav-home-button i {
+          .nav-container .navigation-bar .nav-home-button i {
             transform: scale(1.3, 1.3); } }
         @media only screen and (min-width: 992px) {
-          .nav-container .navigation-home .nav-home-button i {
+          .nav-container .navigation-bar .nav-home-button i {
             transform: scale(1.5, 1.5); } }
-    .nav-container .navigation-home .logo-box {
+    .nav-container .navigation-bar .download-button {
+      background-color: #b31e00;
+      color: #F8F8F8;
+      background-image: url("../images/distressRed.png");
+      background-repeat: repeat-x;
+      border-left: 0.5px solid #363026; }
+      .nav-container .navigation-bar .download-button p {
+        line-height: 1.1;
+        text-shadow: 0.5px 0.5px 1px #1e1b15; }
+    .nav-container .navigation-bar .download-button:hover p {
+      text-shadow: 0 0 10px #e68f0b; }
+    .nav-container .navigation-bar .logo-box {
       width: 200px;
       position: absolute;
       left: -16px;
       top: -4px; }
       @media only screen and (min-width: 768px) {
-        .nav-container .navigation-home .logo-box {
+        .nav-container .navigation-bar .logo-box {
           width: 210px;
           left: -16px;
           top: -6px; } }
       @media only screen and (min-width: 992px) {
-        .nav-container .navigation-home .logo-box {
+        .nav-container .navigation-bar .logo-box {
           width: 272px;
           left: -16px;
           top: -14px; } }
       @media only screen and (min-width: 1200px) {
-        .nav-container .navigation-home .logo-box {
+        .nav-container .navigation-bar .logo-box {
           width: 320px;
           left: -16px;
           top: -20px; } }
-      .nav-container .navigation-home .logo-box img {
+      .nav-container .navigation-bar .logo-box img {
         width: 100%;
         position: relative;
         z-index: 12; }
@@ -222,11 +351,34 @@ a:focus, a:active {
     position: absolute;
     width: calc(100% - 30px);
     margin-left: 15px;
-    height: 300px;
     box-shadow: 1px 1px 6px #1e1b15;
     background-color: #262020;
     padding: 0 15px;
     z-index: 4; }
+    .nav-container .mega-menu ul {
+      display: inline-block;
+      list-style: none;
+      margin-bottom: 48px;
+      border-left: 0.5px solid #3d372d;
+      margin-top: 24px; }
+    .nav-container .mega-menu li {
+      font-size: 16px;
+      font-size: 1rem;
+      color: #ffa926;
+      margin-top: 12px;
+      padding-left: 6px; }
+    .nav-container .mega-menu .menu-head {
+      font-size: 18px;
+      font-size: 1.125rem;
+      color: #F8F8F8;
+      font-weight: 400;
+      margin-bottom: 18px;
+      border: 0; }
+    .nav-container .mega-menu a {
+      text-decoration: none; }
+    .nav-container .mega-menu a > li:hover {
+      text-decoration: none;
+      color: #e68f0b; }
   .nav-container .carot-rotated {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);

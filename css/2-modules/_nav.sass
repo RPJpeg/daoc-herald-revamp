@@ -1,54 +1,69 @@
 .nav-container
-  position: relative
+  display: none
+  @include bp-small
+    position: relative
+    display: block
 
   .navigation-bar
     background-color: $darkBrown
     box-shadow: 1px 1px 6px $darkerBrown
     width: 100%
     height: 60px
-
-  .navigation-home
-    margin-top: 24px
-
-    .nav-buttons
-      margin: 0
-      padding: 0
+    margin-top: 16px
+    background-image: url("../images/distress.png")
+    background-repeat: repeat-x
 
     .nav-bar-button
       height: 60px
       width: 12%
-      border-right: 0.5px solid $lightBrown
-      &:last-child
-        border-right: none
-      border-left: 0.5px solid $darkerBrown
-      &:first-child
-        border-right: none
+      border-left: 0.5px solid $lightBrown
+      border-right: 0.5px solid $darkerBrown
       display: flex
       justify-content: center
       align-items: center
+      background-image: url("../images/distress.png")
+      background-repeat: repeat-x
       p
         @include font-size(14px)
         font-weight: 300
         letter-spacing: 1px
         @include transition(0.2s)
         @include bp-small
-          @include font-size(16px)
+          @include font-size(14px)
         @include bp-medium
+          @include font-size(16px)
+        @include bp-large
           @include font-size(18px)
     .nav-bar-button:hover > p
       color: $offWhite
     .nav-bar-button:hover > i
       color: $offWhite
 
+    #nav-game-button
+      border-left: none
+
     .nav-home-button
       width: 20%
-      border-left: none
+      border: none
       i
         @include transition(0.2s)
         @include bp-small
           transform: scale(1.3,1.3)
         @include bp-medium
           transform: scale(1.5,1.5)
+
+    .download-button
+      background-color: $darkRed
+      color: $offWhite
+      background-image: url("../images/distressRed.png")
+      background-repeat: repeat-x
+      border-left: 0.5px solid $brown
+      p
+        line-height: 1.1
+        text-shadow: 0.5px 0.5px 1px $darkerBrown
+    .download-button:hover
+      p
+        text-shadow: 0 0 10px $darkGold
 
     .logo-box
       width: 200px
@@ -79,11 +94,33 @@
     position: absolute
     width: calc(100% - 30px)
     margin-left: 15px
-    height: 300px
     box-shadow: 1px 1px 6px $darkerBrown
     background-color: $darkBrown
     padding: 0 15px
     z-index: 4
+    ul
+      display: inline-block
+      list-style: none
+      margin-bottom: 48px
+      border-left: 0.5px solid $lightBrown
+      margin-top: 24px
+    li
+      @include font-size(16px)
+      color: $lightGold
+      margin-top: 12px
+      padding-left: 6px
+
+    .menu-head
+      @include font-size(18px)
+      color: $offWhite
+      font-weight: 400
+      margin-bottom: 18px
+      border: 0
+    a
+      text-decoration: none
+    a > li:hover
+      text-decoration: none
+      color: $darkGold
 
   .carot-rotated
     @include rotate($val: 180deg)
