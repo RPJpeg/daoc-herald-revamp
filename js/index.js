@@ -35,5 +35,16 @@ $(document).ready(function() {
     });
   });
 
+  $(function() {
+      var show = $(".not-visible");
+      $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 500) {
+              show.removeClass('not-visible').addClass("visible");
+          } else {
+              show.removeClass("visible").addClass('not-visible');
+          }
+      });
+  });
 
 });

@@ -14,3 +14,21 @@ body
   opacity: 0.4
   z-index: -1
   pointer-events: none
+
+.back-to-top
+  position: fixed
+  float: right
+  bottom: 12px
+  right: 24px
+
+.not-visible
+  visibility: hidden
+  bottom: -40px
+  @include transition(.5s)
+
+.visible
+  visibility: visible
+  @include transition(.5s)
+
+.container
+  padding: 0

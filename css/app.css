@@ -15,6 +15,32 @@ body {
   z-index: -1;
   pointer-events: none; }
 
+.back-to-top {
+  position: fixed;
+  float: right;
+  bottom: 12px;
+  right: 24px; }
+
+.not-visible {
+  visibility: hidden;
+  bottom: -40px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.visible {
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.container {
+  padding: 0; }
+
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.25px;
@@ -87,45 +113,47 @@ a:focus, a:active {
   color: #e68f0b; }
 
 .header-home {
-  display: none; }
+  display: none;
+  padding: 0; }
   @media only screen and (min-width: 768px) {
     .header-home {
       display: block;
       background-color: #f29c18;
       margin-bottom: 0;
+      padding: 0;
       height: 36px;
       box-shadow: 1px 1px 1px #262020; } }
-  .header-home .hero-links {
-    margin-right: 4px; }
-    .header-home .hero-links a {
-      color: #363026; }
-    .header-home .hero-links a:hover {
-      color: #bf2000;
-      text-decoration: none; }
-    .header-home .hero-links li {
-      display: inline;
-      line-height: 2.4;
-      padding: 12px 0;
-      font-weight: 400;
-      font-size: 16px;
-      font-size: 1rem; }
+  .header-home .hero-links a {
+    color: #363026; }
+  .header-home .hero-links a:hover {
+    color: #bf2000;
+    text-decoration: none; }
+  .header-home .hero-links li {
+    display: inline;
+    line-height: 2.4;
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem; }
+    .header-home .hero-links li:last-child {
+      margin-left: 12px; }
+    @media only screen and (min-width: 768px) {
       .header-home .hero-links li:last-child {
-        margin-left: 12px; }
-      @media only screen and (min-width: 768px) {
+        margin-left: 18px; } }
+    @media only screen and (min-width: 992px) {
+      .header-home .hero-links li {
+        font-size: 18px;
+        font-size: 1.125rem; }
         .header-home .hero-links li:last-child {
-          margin-left: 18px; } }
-      @media only screen and (min-width: 992px) {
-        .header-home .hero-links li {
-          font-size: 18px;
-          font-size: 1.125rem; }
-          .header-home .hero-links li:last-child {
-            margin-left: 24px; } }
+          margin-left: 24px; } }
 
 .home-hero {
   height: 36px;
   position: relative;
   margin-bottom: 0;
-  z-index: 30; }
+  z-index: 30;
+  display: none;
+  padding: 0; }
   @media only screen and (min-width: 768px) {
     .home-hero {
       display: block; } }
@@ -133,8 +161,9 @@ a:focus, a:active {
     width: 38vw;
     display: none;
     position: absolute;
-    right: 10px;
-    top: 68px; }
+    right: 0;
+    top: 68px;
+    padding: 0; }
     .home-hero .search-bar input {
       margin: 0;
       box-shadow: 1px 1px 1px #262020;
@@ -155,7 +184,7 @@ a:focus, a:active {
         width: 250px;
         height: 36px;
         top: 10px;
-        right: 16px; } }
+        right: 0; } }
 
 .mobile-nav {
   height: 60px;
@@ -213,7 +242,7 @@ a:focus, a:active {
     font-size: 1.125rem;
     color: #ffa926;
     padding-left: 24px;
-    margin-top: 8px; }
+    margin-top: 4px; }
   .mobile-mega-menu .menu-head {
     font-size: 20px;
     font-size: 1.25rem;
@@ -230,6 +259,7 @@ a:focus, a:active {
 .mobile-search-bar input {
   width: 95%;
   margin: 0;
+  height: 36px;
   box-shadow: 1px 1px 1px #262020;
   background-color: #bfbfbf;
   color: #101010;
@@ -243,7 +273,8 @@ a:focus, a:active {
   margin-top: 10px; }
 
 .nav-container {
-  display: none; }
+  display: none;
+  padding: 0; }
   @media only screen and (min-width: 768px) {
     .nav-container {
       position: relative;
@@ -365,7 +396,7 @@ a:focus, a:active {
       font-size: 16px;
       font-size: 1rem;
       color: #ffa926;
-      margin-top: 12px;
+      margin-top: 8px;
       padding-left: 6px; }
     .nav-container .mega-menu .menu-head {
       font-size: 18px;
@@ -387,5 +418,40 @@ a:focus, a:active {
     transform: rotate(180deg); }
   .nav-container .menu-selected {
     background-color: #3d372d; }
+
+.promo-home {
+  margin-top: 50px;
+  position: relative; }
+  .promo-home video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 2; }
+  .promo-home .promo-hero {
+    color: #F8F8F8; }
+    .promo-home .promo-hero .video-hero {
+      width: 100%;
+      height: 320px;
+      border: 1px solid #f29c18;
+      background-color: rgba(54, 48, 38, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .promo-home .promo-hero .promo-caption {
+      margin-top: 12px;
+      width: 100%; }
+      .promo-home .promo-hero .promo-caption h1 {
+        margin: 12px 0 0 0; }
+      .promo-home .promo-hero .promo-caption h5 {
+        margin: 6px 0 0 0; }
+  .promo-home .social-feed {
+    color: #F8F8F8;
+    border: 1px solid #f29c18;
+    height: 320px;
+    background-color: rgba(54, 48, 38, 0.8); }
+  .promo-home .ph {
+    height: 36px; }
 
 /*# sourceMappingURL=app.css.map */
