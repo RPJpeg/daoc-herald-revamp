@@ -41,6 +41,36 @@ body {
 .container {
   padding: 0; }
 
+.primary-button {
+  background-color: rgba(16, 16, 16, 0.1);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #f29c18;
+  font-weight: 400;
+  padding: 12px;
+  width: 132px;
+  outline: 1pt solid #101010;
+  border: 1pt solid #f29c18;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+.primary-button:hover {
+  background-color: rgba(244, 157, 0, 0.1); }
+
+.action-button {
+  background-color: rgba(133, 24, 9, 0.8);
+  color: #f29c18;
+  border: 1pt solid #bf2000;
+  margin-left: 24px; }
+
+.action-button:hover {
+  background-color: rgba(133, 24, 9, 0.5); }
+
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.25px;
@@ -51,7 +81,7 @@ body {
   font-size: 0.875rem; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Asar", serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -176,7 +206,7 @@ a:focus, a:active {
       border: 1px solid #f29c18; }
     .home-hero .search-bar i {
       color: #f29c18;
-      transform: translate(-24px, 10px);
+      transform: translate(-24px, 7px);
       top: 18px; }
     @media only screen and (min-width: 768px) {
       .home-hero .search-bar {
@@ -187,7 +217,7 @@ a:focus, a:active {
         right: 0; } }
 
 .mobile-nav {
-  height: 60px;
+  height: 76px;
   box-shadow: 1px 1px 6px #1e1b15;
   background-color: #262020;
   z-index: 20;
@@ -202,9 +232,14 @@ a:focus, a:active {
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s; }
+    transition: 0.2s;
+    margin-top: 8px; }
   .mobile-nav .mobile-nav-button > i:hover {
     color: #F8F8F8; }
+  .mobile-nav #megaMobileMenuTrig {
+    transform: translateX(12px); }
+  .mobile-nav #searchMobileMenuTrig {
+    transform: translateX(-12px); }
   .mobile-nav img {
     float: left;
     width: 200px;
@@ -420,38 +455,115 @@ a:focus, a:active {
     background-color: #3d372d; }
 
 .promo-home {
-  margin-top: 50px;
-  position: relative; }
-  .promo-home video {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    overflow: hidden;
-    z-index: 2; }
+  margin-top: 0;
+  position: relative;
+  background-image: url("../images/ph-image.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 4px #101010; }
+  @media only screen and (min-width: 768px) {
+    .promo-home {
+      height: 600px;
+      margin-top: 36px; } }
+  .promo-home .promo-content {
+    height: 90%; }
+    .promo-home .promo-content h1, .promo-home .promo-content p {
+      text-shadow: 2px 2px 6px #101010; }
+    .promo-home .promo-content p {
+      margin: 24px 0;
+      max-width: 75%;
+      color: #ccb8a3;
+      font-size: 18px;
+      font-size: 1.125rem; }
+    .promo-home .promo-content li {
+      display: inline; }
+    .promo-home .promo-content button {
+      background-color: rgba(16, 16, 16, 0.1);
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-size: 1.125rem;
+      color: #f29c18;
+      font-weight: 400;
+      padding: 12px;
+      width: 132px;
+      outline: 1pt solid #101010;
+      border: 1pt solid #f29c18;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .promo-home .promo-content button:hover {
+      background-color: rgba(244, 157, 0, 0.1); }
+    .promo-home .promo-content .action-button {
+      background-color: rgba(133, 24, 9, 0.8);
+      color: #f29c18;
+      border: 1pt solid #bf2000;
+      margin-left: 24px; }
+    .promo-home .promo-content .action-button:hover {
+      background-color: rgba(133, 24, 9, 0.5); }
   .promo-home .promo-hero {
-    color: #F8F8F8; }
-    .promo-home .promo-hero .video-hero {
-      width: 100%;
-      height: 320px;
-      border: 1px solid #f29c18;
-      background-color: rgba(54, 48, 38, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .promo-home .promo-hero .promo-caption {
-      margin-top: 12px;
-      width: 100%; }
-      .promo-home .promo-hero .promo-caption h1 {
-        margin: 12px 0 0 0; }
-      .promo-home .promo-hero .promo-caption h5 {
-        margin: 6px 0 0 0; }
+    color: #F8F8F8;
+    padding-left: 10vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      .promo-home .promo-hero {
+        padding-left: 3vw; } }
   .promo-home .social-feed {
     color: #F8F8F8;
-    border: 1px solid #f29c18;
-    height: 320px;
-    background-color: rgba(54, 48, 38, 0.8); }
+    padding-left: 3vw;
+    height: 100%;
+    background-color: rgba(54, 48, 38, 0.4);
+    outline: 1pt solid #101010;
+    border: 1pt solid #bfa78f; }
   .promo-home .ph {
     height: 36px; }
+
+.player-callout-home {
+  background-color: #1e1b15;
+  height: 650px; }
+  @media only screen and (min-width: 768px) {
+    .player-callout-home {
+      height: 450px; } }
+  .player-callout-home .player-callout-box {
+    height: 100%;
+    border: 1px solid #bfa78f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      .player-callout-home .player-callout-box {
+        display: block; } }
+    .player-callout-home .player-callout-box .player-button-box {
+      border: 1px solid red;
+      height: 275px;
+      width: 275px;
+      margin: 24px auto;
+      float: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../images/distressRed.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media only screen and (min-width: 768px) {
+        .player-callout-home .player-callout-box .player-button-box {
+          height: 275px;
+          width: 275px;
+          margin: 87.5px 45px; } }
+      .player-callout-home .player-callout-box .player-button-box .primary-button {
+        background-color: rgba(39, 33, 33, 0.8); }
+      .player-callout-home .player-callout-box .player-button-box .primary-button:hover {
+        background-color: rgba(39, 33, 33, 0.5); }
 
 /*# sourceMappingURL=app.css.map */

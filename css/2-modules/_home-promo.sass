@@ -1,37 +1,65 @@
 .promo-home
-  margin-top: 50px
+  margin-top: 0
   position: relative
-  video
-    width: 100%
-    height: 100%
-    position: absolute
-    object-fit: cover
-    overflow: hidden
-    z-index: 2
+  background-image: url("../images/ph-image.png")
+  background-position: center top
+  background-repeat: no-repeat
+  background-size: cover
+  height: 450px
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 1px 1px 4px $offBlack
+  @include bp-small
+    height: 600px
+    margin-top: 36px
+  .promo-content
+    height: 90%
+    h1,p
+      text-shadow: 2px 2px 6px $offBlack
+    p
+      margin: 24px 0
+      max-width: 75%
+      color: $lightTan
+      @include font-size(18px)
+    li
+      display: inline
+    button
+      background-color: rgba(16,16,16,0.1)
+      border: none
+      outline: none
+      @include font-size(18px)
+      color: $gold
+      font-weight: 400
+      padding: 12px
+      width: 132px
+      outline: 1pt solid $offBlack
+      border: 1pt solid $gold
+      @include transition(.2s)
+    button:hover
+      background-color: rgba(244,157,0,0.1)
+    .action-button
+      background-color: rgba(133,24,9,0.8)
+      color: $gold
+      border: 1pt solid $red
+      margin-left: 24px
+    .action-button:hover
+      background-color: rgba(133,24,9,0.5)
   .promo-hero
     color: $offWhite
-    .video-hero
-      width: 100%
-      height: 320px
-      border: 1px solid $gold
-      background-color: rgba(54,48,38,0.8)
-      display: flex
-      justify-content: center
-      align-items: center
-    .promo-caption
-      margin-top: 12px
-      width: 100%
-      h1
-        margin: 12px 0 0 0
-      h5
-        margin: 6px 0 0 0
-
-
+    padding-left: 10vw
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include bp-small
+      padding-left: 3vw
   .social-feed
     color: $offWhite
-    border: 1px solid $gold
-    height: 320px
-    background-color: rgba(54,48,38,0.8)
-
+    padding-left: 3vw
+    height: 100%
+    background-color: rgba(54,48,38,0.4)
+    outline: 1pt solid $offBlack
+    border: 1pt solid $tan
   .ph
     height: 36px

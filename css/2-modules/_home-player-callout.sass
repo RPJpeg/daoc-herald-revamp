@@ -1,0 +1,34 @@
+.player-callout-home
+  background-color: $darkerBrown
+  height: 650px
+  @include bp-small
+    height: 450px
+  .player-callout-box
+    height: 100%
+    border: 1px solid $tan
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include bp-small
+      display: block
+    .player-button-box
+      border: 1px solid red
+      height: 275px
+      width: 275px
+      margin: 24px auto
+      float: none
+      display: flex
+      align-items: center
+      justify-content: center
+      background-image: url("../images/distressRed.png")
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      @include bp-small
+        height: 275px
+        width: 275px
+        margin: 87.5px 45px
+      .primary-button
+        background-color: rgba(39,33,33,0.8)
+      .primary-button:hover
+        background-color: rgba(39,33,33,0.5)

@@ -13,7 +13,7 @@
   <meta name="keywords" content="Dark Age of Camelot, DAoC, Herald, Mythic, EA, MMO, MMORPG, Realm, RvR, PvP, Broadsword, Labyrinth of the Minotaur, Darkness Rising, Darkness Falls, Catacombs, Frontiers, Foundations, Trials of Atlantis, Shrouded Isles, Toa, DF">
   <script src="https://use.fontawesome.com/d56ed05451.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Asar|Roboto+Condensed:400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="shortcut icon" href="http://darkageofcamelot.com/favicon.ico" type="image/vnd.microsoft.icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -24,6 +24,8 @@
 
 <body>
 
+<!-- Gold Header -->
+
   <header class="container-fluid header-home" id="top">
     <div class="container">
       <ul class="hero-links pull-right">
@@ -33,6 +35,8 @@
     </div>
   </header>
 
+<!-- Navigation Menus -->
+
   <div id="megaMobileWrap">
     <nav class="mobile-nav">
       <div class="container row">
@@ -40,7 +44,7 @@
           <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </div>
         <div class="col-xs-8"></div>
-        <div class="col-xs-2 mobile-nav-button" href="#" id="scrollMobileMenuTrig">
+        <div class="col-xs-2 mobile-nav-button" href="#" id="searchMobileMenuTrig">
           <i class="fa fa-search fa-2x pull-right" aria-hidden="true"></i>
         </div>
       </div>
@@ -78,6 +82,8 @@
       </ul>
     </div>
 
+<!-- Mobile Specific Navigation -->
+
     <div class="mobile-mega-menu" id="scrollMobileMenu">
       <div class="mobile-search-bar clearfix">
         <i class="fa fa-search fa-lg" aria-hidden="true"></i>
@@ -87,12 +93,16 @@
 
   </div>
 
+<!-- Space Above the Navigation for search field -->
+
   <div class="container home-hero">
     <div class="search-bar clearfix">
         <i class="fa fa-search fa-lg" aria-hidden="true"></i>
         <input id="search-input" class="form-control clearfix" placeholder="Search" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
     </div>
   </div>
+
+<!-- Navigation Bar -->
 
   <div class="container nav-container" id="megaWrap">
     <nav class="navigation-bar dropdown">
@@ -151,24 +161,38 @@
 
   </div>
 
-  <main class="container promo promo-home">
-    <video controls loop autoplay="autoplay">
-      <source src="videos/black-smoke.mp4" type="video/mp4">
-    </video>
-      <div class="promo-hero col-sm-8">
-        <div class="video-hero">
-          Join the Fight!
-        </div>
-        <div class="promo-caption">
-          <h1>Otherworld Campaign</h1>
-          <h5>Now Live!</h5>
-        </div>
+<!-- Call to action promo area -->
+
+  <main class="container-fluid promo promo-home">
+    <div class="promo-content container row">
+      <div class="promo-hero col-xs-12 col-sm-9 col-md-9">
+        <h1>OTHERWORLD CAMPAIGN<br> NOW LIVE!</h1>
+        <p>Join the fray and take up arms with fellow adventurers in classic
+          MMO action!  Epic battles and a vast world to explore!</p>
+        <ul>
+          <li><a href="news.html" alt="DAoC News"><button class="primary-button">LATEST NEWS</button></a></li>
+          <li><a href="download-play.html" alt="DAoC News"><button class="action-button">JOIN NOW</button></a></li>
+        </ul>
       </div>
-      <div class="ph col-sm-1"></div>
-      <div class="social-feed col-sm-3">
-        Tweets and Twitters
+      <div class="social-feed hidden-xs col-sm-3 col-md-3">
       </div>
+    </div>
   </main>
+
+<!-- New or Returning Players Area -->
+
+  <div class ="container-fluid player-callout player-callout-home">
+    <div class="container player-callout-box">
+      <div class="player-button-box pull-left">
+        <a href="gameplay.html" alt="DAoC New Player Guide"><button class="primary-button">NEW PLAYERS</button></a>
+      </div>
+      <div class="player-button-box pull-right">
+        <a href="gameplay.html" alt="DAoC Returning Player Guide"><button class="primary-button">RETURNING PLAYERS</button></a>
+      </div>
+    </div>
+  </div>
+
+<!-- Back to top button -->
 
   <div class="back-to-top not-visible" id="back-to-top">
     <a href="#top" class="smooth-scroll">

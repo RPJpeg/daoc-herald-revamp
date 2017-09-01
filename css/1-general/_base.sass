@@ -32,3 +32,25 @@ body
 
 .container
   padding: 0
+  
+.primary-button
+  background-color: rgba(16,16,16,0.1)
+  border: none
+  outline: none
+  @include font-size(18px)
+  color: $gold
+  font-weight: 400
+  padding: 12px
+  width: 132px
+  outline: 1pt solid $offBlack
+  border: 1pt solid $gold
+  @include transition(.2s)
+.primary-button:hover
+  background-color: rgba(244,157,0,0.1)
+.action-button
+  background-color: rgba(133,24,9,0.8)
+  color: $gold
+  border: 1pt solid $red
+  margin-left: 24px
+.action-button:hover
+  background-color: rgba(133,24,9,0.5)

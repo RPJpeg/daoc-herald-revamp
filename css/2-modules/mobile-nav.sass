@@ -1,5 +1,5 @@
 .mobile-nav
-  height: 60px
+  height: 76px
   box-shadow: 1px 1px 6px $darkerBrown
   background-color: $darkBrown
   z-index: 20
@@ -11,8 +11,13 @@
     justify-content: center
     align-items: center
     @include transition(0.2s)
+    margin-top: 8px
   .mobile-nav-button > i:hover
     color: $offWhite
+  #megaMobileMenuTrig
+    transform: translateX(12px)
+  #searchMobileMenuTrig
+    transform: translateX(-12px)
   img
     float: left
     width: 200px

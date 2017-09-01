@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
   });
 
-  $( "#scrollMobileMenuTrig" ).click(function() {
+  $( "#searchMobileMenuTrig" ).click(function() {
   $( "#scrollMobileMenu" ).slideToggle( "fast", function() {
     });
   });
