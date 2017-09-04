@@ -1,18 +1,26 @@
 .player-callout-home
-  background-color: $darkerBrown
-  height: 650px
+  background-color: rgba(30,27,21,0.7)
+  height: 700px
+  padding: 0
   @include bp-small
-    height: 450px
+    height: 600px
+    padding: 60px 0 40px 0
   .player-callout-box
     height: 100%
-    border: 1px solid $tan
     display: flex
     flex-direction: column
     justify-content: center
+    background-image: url("../images/character-poses-cropped.png")
+    background-position: bottom left
+    background-repeat: no-repeat
     @include bp-small
       display: block
+      background-image: url("../images/character-poses.png")
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
     .player-button-box
-      border: 1px solid red
+      border: 1px solid $tan
       height: 275px
       width: 275px
       margin: 24px auto
@@ -20,14 +28,14 @@
       display: flex
       align-items: center
       justify-content: center
-      background-image: url("../images/distressRed.png")
+      // background-image: url("../images/distressRed.png")
       background-position: center
       background-repeat: no-repeat
       background-size: cover
       @include bp-small
-        height: 275px
-        width: 275px
-        margin: 87.5px 45px
+        height: 250px
+        width: 250px
+        margin: 122.5px 45px 0 45px
       .primary-button
         background-color: rgba(39,33,33,0.8)
       .primary-button:hover

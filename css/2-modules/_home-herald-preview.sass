@@ -1,0 +1,35 @@
+.herald-articles-preview-home
+  padding: 0
+  background-color: $darkBrown
+  box-shadow: 1px 1px 4px $offBlack
+.herald-home
+  padding: 64px 12px 32px 12px
+  h2
+    color: $offWhite
+    border-bottom: 1pt solid $tan
+    padding-bottom: 24px
+    margin-bottom: 72px
+  article
+    margin: 72px 0
+    img
+      max-height: 36px
+      margin: 0 8px 0 0
+      outline: 1pt solid $darkTan
+      @include transition(.2s)
+      @include bp-small
+        max-height: 120px
+        margin: 0 12px 0 0
+    img:hover
+      opacity: 0.85
+    h4
+      color: $gold
+    h4:hover
+      color: $darkGold
+    .herald-caption
+      color: $darkTan
+      padding: 4px 0
+    .herald-paragraph
+      color: $lightGrey
+      max-height: 72px
+      overflow: hidden
+    @include clearfix

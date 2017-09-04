@@ -1,0 +1,42 @@
+.updates-grid-home
+  height: auto
+  margin-bottom: 72px
+  @include bp-small
+    height: 700px
+    padding: 0
+    margin: 0
+    background-color: rgba(30,27,21,0.7)
+  .updates-grid-content
+    background-color: $darkerBrown
+    border: 1pt solid $darkTan
+    padding: 72px 24px 36px 24px
+    margin: 70px auto
+    box-shadow: 1px 1px 4px $offBlack
+    .updates-grid-box
+      margin-bottom: 36px
+      img
+        @include transition(.2s)
+        max-width: 72px
+        float: left
+        margin-right: 12px
+        @include bp-small
+          width: 90%
+          height: auto
+          float: none
+          max-height: 132px
+          max-width: none
+          transform: none
+          outline: 1pt solid $darkTan
+          @include transition(.2s)
+      img:hover
+        opacity: 0.85
+      h4
+        margin: 18px 0 8px 0
+        color: $offWhite
+      p
+        max-height: 120px
+        overflow: hidden
+        width: 91%
+        color: $lightTan
+      a
+        margin-right: 16px
