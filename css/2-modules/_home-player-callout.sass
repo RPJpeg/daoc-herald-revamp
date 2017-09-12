@@ -2,9 +2,11 @@
   background-color: rgba(30,27,21,0.7)
   height: 700px
   padding: 0
+  box-shadow: 1px 1px 1px $darkBrown
   @include bp-small
     height: 600px
     padding: 60px 0 40px 0
+    box-shadow: none
   .player-callout-box
     height: 100%
     display: flex
@@ -20,7 +22,6 @@
       background-repeat: no-repeat
       background-size: contain
     .player-button-box
-      border: 1px solid $tan
       height: 275px
       width: 275px
       margin: 24px auto

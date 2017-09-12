@@ -15,7 +15,7 @@
     .updates-grid-box
       margin-bottom: 36px
       img
-        @include transition(.2s)
+        @include transition(.1s)
         max-width: 72px
         float: left
         margin-right: 12px
@@ -27,16 +27,24 @@
           max-width: none
           transform: none
           outline: 1pt solid $darkTan
-          @include transition(.2s)
+          @include transition(.1s)
       img:hover
         opacity: 0.85
       h4
         margin: 18px 0 8px 0
-        color: $offWhite
+        color: $gold
+        text-decoration: none
+        @include transition(.1s)
+      h4:hover
+        color: $darkGold
       p
         max-height: 120px
         overflow: hidden
         width: 91%
-        color: $lightTan
-      a
-        margin-right: 16px
+        color: $offWhite
+        margin-top: 26px
+        @include bp-small
+          margin-top: 0
+      .read-more
+        margin-right: 20px
+        @include transition(.1s)

@@ -20,7 +20,8 @@ body
   float: right
   bottom: 12px
   right: 24px
-  opacity: 0.5
+  opacity: 0.72
+  z-index: 9999
 
 .not-visible
   visibility: hidden
@@ -55,3 +56,12 @@ body
   margin-left: 24px
 .action-button:hover
   background-color: rgba(133,24,9,0.5)
+
+.home-animated-background
+  height: 526px
+  background-image: url("../images/ph-image.png")
+  background-position: center top
+  background-repeat: no-repeat
+  background-size: cover
+  @include bp-small
+    height: 748px
