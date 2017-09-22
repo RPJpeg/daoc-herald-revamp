@@ -4,23 +4,21 @@
   padding: 0
   box-shadow: 1px 1px 1px $darkBrown
   @include bp-small
-    height: 600px
-    padding: 60px 0 40px 0
+    height: 500px
+    padding: 0
     box-shadow: none
+    background-color: $darkerBrown
   .player-callout-box
     height: 100%
     display: flex
     flex-direction: column
     justify-content: center
-    background-image: url("../images/character-poses-cropped.png")
-    background-position: bottom left
-    background-repeat: no-repeat
     @include bp-small
       display: block
-      background-image: url("../images/character-poses-2.png")
-      background-position: center
+      background-image: url("../images/character-poses-3.png")
+      background-position: top center
       background-repeat: no-repeat
-      background-size: contain
+      background-size: auto
     .player-button-box
       height: 275px
       width: 275px
@@ -29,17 +27,17 @@
       display: flex
       align-items: center
       justify-content: center
-      background-image: url("../images/players-backdrop.png")
+      background-image: url("../images/daoc-button-left.png")
       background-position: center
       background-repeat: no-repeat
       background-size: cover
+      border: 1pt solid $lightTan
       @include bp-small
         height: 250px
         width: 250px
         margin: 122.5px 45px 0 45px
       .primary-button
         background-color: rgba(39,33,33,0.8)
-        background-image: url("../images/distressRed.png")
         background-position: center
         background-repeat: repeat-x
         background-size: cover
@@ -53,32 +51,61 @@
       .primary-button:hover
         text-shadow: 0 0 10px $darkGold
         border: 1pt solid $lightBlue
-  .player-callout-box-alt
-    height: 100%
-    display: flex
-    flex-direction: column
-    justify-content: center
-    border: 1pt solid yellow
-    @include bp-small
-      display: block
-    .player-button-box
-      border: 1pt solid blue
-      height: 275px
-      width: 275px
-      float: none
-      display: flex
-      align-items: center
-      justify-content: center
-      background-image: url("../images/players-backdrop.png")
-      background-position: center
-      background-repeat: no-repeat
-      background-size: cover
-      @include bp-small
-        height: 100%
-        width: 50%
-        img
-          width: 100%
-          height: 80%
-        h3
-          color: $gold
-          height: 20%
+    .button-box-alt
+      background-image: url("../images/daoc-button-right.png")
+
+// .player-callout-home-alt
+//   height: 700px
+//   padding: 0
+//   @include bp-small
+//     height: 450px
+//     padding: 1px 0 40px 0
+//     box-shadow: none
+//     background-color: rgba(30,27,21,0.7)
+//     box-shadow: 1px 1px 1px $darkBrown
+//   .container
+//     height: 100%
+//     margin-top: 0
+//     @include bp-small
+//       height: 100%
+//       margin-top: 60px
+//   .player-callout-box-alt
+//     height: 100%
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     @include bp-small
+//       display: block
+//     .player-button-box
+//       border: 1pt solid $lightTan
+//       height: 275px
+//       width: 100%
+//       float: none
+//       display: flex
+//       align-items: center
+//       justify-content: center
+//       background-image: url("../images/character-poses-2.png")
+//       background-color: $brown
+//       background-position: center
+//       background-repeat: no-repeat
+//       background-size: contain
+//       @include transition(0.2s)
+//       @include bp-small
+//         height: 100%
+//         width: 50%
+//       h3
+//         color: $lightGrey
+//         background-color: $darkBrown
+//         padding: 16px
+//         box-shadow: 1px 1px 1px $offBlack
+//         transform: translateY(28px)
+//
+//     .player-button-box:hover
+//       filter: brightness(120%)
+//     .player-button-box-alt
+//       background-image: url("../images/character-poses.png")
+//       border-left: 1pt solid $lightTan
+//       border-top: none
+//       @include bp-small
+//         border-left: none
+//         border-top: 1pt solid $lightTan

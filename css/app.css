@@ -67,15 +67,14 @@ body {
 .action-button {
   background-color: rgba(133, 24, 9, 0.8);
   color: #f29c18;
-  border: 1pt solid #bf2000;
-  margin-left: 24px; }
+  border: 1pt solid #bf2000; }
 
 .action-button:hover {
   background-color: rgba(133, 24, 9, 0.5); }
 
 .home-animated-background {
   height: 526px;
-  background-image: url("../images/ph-image.png");
+  background-image: url("../images/hero-image-option.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -169,7 +168,9 @@ a:focus, a:active {
       margin-bottom: 0;
       padding: 0;
       height: 36px;
-      box-shadow: 1px 1px 1px #262020; } }
+      box-shadow: 1px 1px 1px #1e1b15;
+      position: relative;
+      z-index: 9999; } }
   .header-home .hero-links a {
     color: #363026; }
   .header-home .hero-links a:hover {
@@ -219,10 +220,10 @@ a:focus, a:active {
       transform: translateY(-16px);
       height: 28px; }
     .home-hero .search-bar input:focus {
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(230, 143, 11, 0.6);
-      border: 1px solid #f29c18; }
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(153, 153, 153, 0.6);
+      border: 1px solid #999; }
     .home-hero .search-bar i {
-      color: #f29c18;
+      color: #101010;
       transform: translate(-24px, 7px);
       top: 18px; }
     @media only screen and (min-width: 768px) {
@@ -350,6 +351,7 @@ a:focus, a:active {
       background-image: url("../images/distress.png");
       background-repeat: repeat-x; }
       .nav-container .navigation-bar .nav-bar-button p {
+        color: #F8F8F8;
         font-size: 14px;
         font-size: 0.875rem;
         font-weight: 300;
@@ -372,9 +374,9 @@ a:focus, a:active {
             font-size: 18px;
             font-size: 1.125rem; } }
     .nav-container .navigation-bar .nav-bar-button:hover > p {
-      color: #F8F8F8; }
+      color: #f29c18; }
     .nav-container .navigation-bar .nav-bar-button:hover > i {
-      color: #F8F8F8; }
+      color: #f29c18; }
     .nav-container .navigation-bar #nav-game-button {
       border-left: none; }
     .nav-container .navigation-bar .nav-home-button {
@@ -393,16 +395,14 @@ a:focus, a:active {
           .nav-container .navigation-bar .nav-home-button i {
             transform: scale(1.5, 1.5); } }
     .nav-container .navigation-bar .download-button {
-      background-color: #b31e00;
       color: #F8F8F8;
-      background-image: url("../images/distressRed.png");
-      background-repeat: repeat-x;
       border-left: 0.5px solid #363026; }
       .nav-container .navigation-bar .download-button p {
+        color: #e68f0b;
         line-height: 1.1;
         text-shadow: 0.5px 0.5px 1px #1e1b15; }
     .nav-container .navigation-bar .download-button:hover p {
-      text-shadow: 0 0 10px #e68f0b; }
+      text-shadow: 0 0 10px #ffa926; }
     .nav-container .navigation-bar .logo-box {
       width: 200px;
       position: absolute;
@@ -504,7 +504,7 @@ a:focus, a:active {
       color: #f29c18;
       font-weight: 400;
       padding: 12px;
-      width: 132px;
+      width: 232px;
       outline: 1pt solid #101010;
       border: 1pt solid #f29c18;
       -webkit-transition: 0.2s;
@@ -517,8 +517,7 @@ a:focus, a:active {
     .promo-home .promo-content .action-button {
       background-color: rgba(133, 24, 9, 0.8);
       color: #f29c18;
-      border: 1pt solid #bf2000;
-      margin-left: 24px; }
+      border: 1pt solid #bf2000; }
     .promo-home .promo-content .action-button:hover {
       background-color: rgba(133, 24, 9, 0.5); }
   .promo-home .promo-hero {
@@ -549,24 +548,22 @@ a:focus, a:active {
   box-shadow: 1px 1px 1px #262020; }
   @media only screen and (min-width: 768px) {
     .player-callout-home {
-      height: 600px;
-      padding: 60px 0 40px 0;
-      box-shadow: none; } }
+      height: 500px;
+      padding: 0;
+      box-shadow: none;
+      background-color: #1e1b15; } }
   .player-callout-home .player-callout-box {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image: url("../images/character-poses-cropped.png");
-    background-position: bottom left;
-    background-repeat: no-repeat; }
+    justify-content: center; }
     @media only screen and (min-width: 768px) {
       .player-callout-home .player-callout-box {
         display: block;
-        background-image: url("../images/character-poses-2.png");
-        background-position: center;
+        background-image: url("../images/character-poses-3.png");
+        background-position: top center;
         background-repeat: no-repeat;
-        background-size: contain; } }
+        background-size: auto; } }
     .player-callout-home .player-callout-box .player-button-box {
       height: 275px;
       width: 275px;
@@ -575,10 +572,11 @@ a:focus, a:active {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("../images/players-backdrop.png");
+      background-image: url("../images/daoc-button-left.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      border: 1pt solid #ccb8a3; }
       @media only screen and (min-width: 768px) {
         .player-callout-home .player-callout-box .player-button-box {
           height: 250px;
@@ -586,7 +584,6 @@ a:focus, a:active {
           margin: 122.5px 45px 0 45px; } }
       .player-callout-home .player-callout-box .player-button-box .primary-button {
         background-color: rgba(39, 33, 33, 0.8);
-        background-image: url("../images/distressRed.png");
         background-position: center;
         background-repeat: repeat-x;
         background-size: cover;
@@ -604,37 +601,8 @@ a:focus, a:active {
       .player-callout-home .player-callout-box .player-button-box .primary-button:hover {
         text-shadow: 0 0 10px #e68f0b;
         border: 1pt solid #dbedfe; }
-  .player-callout-home .player-callout-box-alt {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1pt solid yellow; }
-    @media only screen and (min-width: 768px) {
-      .player-callout-home .player-callout-box-alt {
-        display: block; } }
-    .player-callout-home .player-callout-box-alt .player-button-box {
-      border: 1pt solid blue;
-      height: 275px;
-      width: 275px;
-      float: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url("../images/players-backdrop.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      @media only screen and (min-width: 768px) {
-        .player-callout-home .player-callout-box-alt .player-button-box {
-          height: 100%;
-          width: 50%; }
-          .player-callout-home .player-callout-box-alt .player-button-box img {
-            width: 100%;
-            height: 80%; }
-          .player-callout-home .player-callout-box-alt .player-button-box h3 {
-            color: #f29c18;
-            height: 20%; } }
+    .player-callout-home .player-callout-box .button-box-alt {
+      background-image: url("../images/daoc-button-right.png"); }
 
 .updates-grid-home {
   height: auto;
@@ -677,10 +645,10 @@ a:focus, a:active {
             -o-transition: 0.1s;
             transition: 0.1s; } }
       .updates-grid-home .updates-grid-content .updates-grid-box img:hover {
-        opacity: 0.85; }
+        filter: brightness(80%); }
       .updates-grid-home .updates-grid-content .updates-grid-box h4 {
         margin: 18px 0 8px 0;
-        color: #f29c18;
+        color: #bfbfbf;
         text-decoration: none;
         -webkit-transition: 0.1s;
         -moz-transition: 0.1s;
@@ -688,7 +656,8 @@ a:focus, a:active {
         -o-transition: 0.1s;
         transition: 0.1s; }
       .updates-grid-home .updates-grid-content .updates-grid-box h4:hover {
-        color: #e68f0b; }
+        color: #e6e6e6;
+        text-decoration: underline; }
       .updates-grid-home .updates-grid-content .updates-grid-box p {
         max-height: 120px;
         overflow: hidden;
@@ -738,7 +707,7 @@ a:focus, a:active {
           max-height: 120px;
           margin: 0 12px 0 0; } }
     .herald-home article img:hover {
-      opacity: 0.85; }
+      filter: brightness(80%); }
     .herald-home article h4 {
       color: #f29c18; }
     .herald-home article h4:hover {
@@ -792,15 +761,17 @@ a:focus, a:active {
         height: auto;
         width: 96px;
         margin-right: 8px;
-        -webkit-transition: 0.1s;
-        -moz-transition: 0.1s;
-        -ms-transition: 0.1s;
-        -o-transition: 0.1s;
-        transition: 0.1s; }
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
         @media only screen and (min-width: 768px) {
           .home-footer .social-box li img {
             margin-right: 4px;
             width: 180px; } }
+      .home-footer .social-box li img:hover {
+        filter: brightness(120%); }
     .home-footer .social-box .flex-list {
       display: flex;
       align-items: center;
