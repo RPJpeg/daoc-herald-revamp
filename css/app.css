@@ -542,16 +542,18 @@ a:focus, a:active {
     height: 36px; }
 
 .player-callout-home {
-  background-color: rgba(30, 27, 21, 0.7);
+  background-color: #1e1b15;
   height: 700px;
   padding: 0;
-  box-shadow: 1px 1px 1px #262020; }
+  box-shadow: 1px 1px 1px #262020;
+  background-image: url("../images/alb-bg.png");
+  background-position: center right;
+  background-repeat: no-repeat; }
   @media only screen and (min-width: 768px) {
     .player-callout-home {
       height: 500px;
       padding: 0;
-      box-shadow: none;
-      background-color: #1e1b15; } }
+      background-image: none; } }
   .player-callout-home .player-callout-box {
     height: 100%;
     display: flex;
@@ -560,7 +562,7 @@ a:focus, a:active {
     @media only screen and (min-width: 768px) {
       .player-callout-home .player-callout-box {
         display: block;
-        background-image: url("../images/character-poses-3.png");
+        background-image: url("../images/hq-character-poses.png");
         background-position: top center;
         background-repeat: no-repeat;
         background-size: auto; } }
@@ -571,38 +573,24 @@ a:focus, a:active {
       float: none;
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-image: url("../images/daoc-button-left.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 1pt solid #ccb8a3; }
+      justify-content: center; }
       @media only screen and (min-width: 768px) {
         .player-callout-home .player-callout-box .player-button-box {
           height: 250px;
           width: 250px;
           margin: 122.5px 45px 0 45px; } }
-      .player-callout-home .player-callout-box .player-button-box .primary-button {
-        background-color: rgba(39, 33, 33, 0.8);
-        background-position: center;
-        background-repeat: repeat-x;
-        background-size: cover;
-        border: 1pt solid #bdcfe6;
-        color: #F8F8F8;
-        line-height: 1.1;
-        text-shadow: 0.5px 0.5px 1px #1e1b15;
-        width: 160px;
-        height: 72px;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s; }
-      .player-callout-home .player-callout-box .player-button-box .primary-button:hover {
-        text-shadow: 0 0 10px #e68f0b;
-        border: 1pt solid #dbedfe; }
-    .player-callout-home .player-callout-box .button-box-alt {
-      background-image: url("../images/daoc-button-right.png"); }
+      .player-callout-home .player-callout-box .player-button-box img {
+        width: 100%;
+        height: auto;
+        box-shadow: 1px 1px 1px #1e1b15;
+        border: 1px solid #b3987d;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s; }
+      .player-callout-home .player-callout-box .player-button-box img:hover {
+        filter: brightness(110%); }
 
 .updates-grid-home {
   height: auto;
