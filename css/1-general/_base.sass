@@ -32,6 +32,12 @@ body
   visibility: visible
   @include transition(.5s)
 
+.fixed
+  position: fixed
+  display: block
+  top: 0
+  background-color: green
+
 .container
   padding: 0
 
@@ -64,3 +70,9 @@ body
   background-size: cover
   @include bp-small
     height: 748px
+
+.community-background
+  height: 1200px
+  background-color: $darkerBrown
+  @include bp-small
+    height: 850px

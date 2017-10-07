@@ -51,5 +51,12 @@ $(document).ready(function() {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
   })
 
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 500) {
+        $("#fixedNav").addClass("fixed");
+    }
+  });
+
 
 });

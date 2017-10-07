@@ -40,6 +40,12 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s; }
 
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  background-color: green; }
+
 .container {
   padding: 0; }
 
@@ -81,6 +87,13 @@ body {
   @media only screen and (min-width: 768px) {
     .home-animated-background {
       height: 748px; } }
+
+.community-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .community-background {
+      height: 850px; } }
 
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
@@ -377,6 +390,8 @@ a:focus, a:active {
       color: #f29c18; }
     .nav-container .navigation-bar .nav-bar-button:hover > i {
       color: #f29c18; }
+    .nav-container .navigation-bar #pageSelected > p {
+      color: #999; }
     .nav-container .navigation-bar #nav-game-button {
       border-left: none; }
     .nav-container .navigation-bar .nav-home-button {
@@ -427,6 +442,10 @@ a:focus, a:active {
         width: 100%;
         position: relative;
         z-index: 12; }
+  .nav-container .navigation-bar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%; }
   .nav-container .mega-menu {
     display: none;
     left: 0;
@@ -670,7 +689,7 @@ a:focus, a:active {
   background-image: url("../images/moloch-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
 
 .herald-home {
   padding: 64px 12px 32px 12px; }
@@ -791,5 +810,58 @@ a:focus, a:active {
     color: #bfa78f; }
   .home-footer .fa-wikipedia-w {
     transform: scale(0.9, 0.9) translateX(-5px); }
+
+.community-main {
+  border: 1pt solid red;
+  height: 1124px; }
+  @media only screen and (min-width: 768px) {
+    .community-main {
+      height: 738px; } }
+  .community-main .stream-box {
+    width: 100%;
+    border: 1pt solid blue;
+    height: 50%;
+    padding: 30px; }
+    .community-main .stream-box p {
+      color: #F8F8F8; }
+    @media only screen and (min-width: 768px) {
+      .community-main .stream-box {
+        width: 60%;
+        height: 100%; } }
+  .community-main .event-box {
+    width: 100%;
+    border: 1pt solid yellow;
+    height: 50%;
+    padding: 30px; }
+    .community-main .event-box p {
+      color: #F8F8F8; }
+    @media only screen and (min-width: 768px) {
+      .community-main .event-box {
+        width: 40%;
+        height: 100%; } }
+
+.community-forum-section {
+  background-color: none;
+  margin: 80px 0; }
+  .community-forum-section .community-forum-box {
+    border: 1pt solid #f29c18;
+    height: 768px;
+    background-color: #262020;
+    padding: 30px; }
+    .community-forum-section .community-forum-box p {
+      color: #F8F8F8; }
+
+.community-groups-section {
+  margin: 80px 0; }
+  .community-groups-section .community-groups-box {
+    height: 210px; }
+    .community-groups-section .community-groups-box .groups-col {
+      border: 1pt solid #bf2000;
+      padding: 0;
+      height: 100%; }
+      .community-groups-section .community-groups-box .groups-col p {
+        color: #F8F8F8; }
+      .community-groups-section .community-groups-box .groups-col img {
+        width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
