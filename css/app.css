@@ -95,6 +95,34 @@ body {
     .community-background {
       height: 850px; } }
 
+.news-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .news-background {
+      height: 850px; } }
+
+.forums-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .forums-background {
+      height: 850px; } }
+
+.store-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .store-background {
+      height: 850px; } }
+
+.download-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .download-background {
+      height: 850px; } }
+
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.25px;
@@ -863,5 +891,125 @@ a:focus, a:active {
         color: #F8F8F8; }
       .community-groups-section .community-groups-box .groups-col img {
         width: 100%; }
+
+.news-main {
+  height: 1124px;
+  padding: 60px 0;
+  box-shadow: 1px 1px 1px #101010; }
+  @media only screen and (min-width: 768px) {
+    .news-main {
+      height: 738px; } }
+  .news-main p {
+    color: #F8F8F8; }
+  .news-main .news-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.news-section {
+  height: 1124px;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .news-section {
+      height: 738px; } }
+  .news-section p {
+    color: #F8F8F8; }
+  .news-section .news-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.forums-main {
+  height: 1124px;
+  padding: 60px 0;
+  box-shadow: 1px 1px 1px #101010; }
+  @media only screen and (min-width: 768px) {
+    .forums-main {
+      height: 738px; } }
+  .forums-main p {
+    color: #F8F8F8; }
+  .forums-main .forums-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.forums-section {
+  height: 1124px;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .forums-section {
+      height: 738px; } }
+  .forums-section p {
+    color: #F8F8F8; }
+  .forums-section .forums-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.download-main {
+  height: 1124px;
+  padding: 60px 0;
+  box-shadow: 1px 1px 1px #101010; }
+  @media only screen and (min-width: 768px) {
+    .download-main {
+      height: 738px; } }
+  .download-main p {
+    color: #F8F8F8; }
+  .download-main .download-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.download-section {
+  height: 1124px;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .download-section {
+      height: 738px; } }
+  .download-section p {
+    color: #F8F8F8; }
+  .download-section .download-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.store-main {
+  height: 1124px;
+  padding: 60px 0;
+  box-shadow: 1px 1px 1px #101010; }
+  @media only screen and (min-width: 768px) {
+    .store-main {
+      height: 738px; } }
+  .store-main p {
+    color: #F8F8F8; }
+  .store-main .store-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.store-section {
+  height: 1124px;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .store-section {
+      height: 738px; } }
+  .store-section p {
+    color: #F8F8F8; }
+  .store-section .store-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
 
 /*# sourceMappingURL=app.css.map */
