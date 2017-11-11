@@ -123,6 +123,13 @@ body {
     .download-background {
       height: 850px; } }
 
+.general-background {
+  height: 1200px;
+  background-color: #1e1b15; }
+  @media only screen and (min-width: 768px) {
+    .general-background {
+      height: 850px; } }
+
 *, html, body, p, a, li, ul, div {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.25px;
@@ -1007,6 +1014,36 @@ a:focus, a:active {
   .store-section p {
     color: #F8F8F8; }
   .store-section .store-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.general-main {
+  height: 1124px;
+  padding: 60px 0;
+  box-shadow: 1px 1px 1px #101010; }
+  @media only screen and (min-width: 768px) {
+    .general-main {
+      height: 738px; } }
+  .general-main p {
+    color: #F8F8F8; }
+  .general-main .general-container {
+    height: 100%;
+    border: 1pt solid #e68f0b;
+    background-color: #101010;
+    box-shadow: 1px 1px 1px #101010; }
+
+.general-section {
+  height: 1124px;
+  padding-top: 60px;
+  margin-bottom: 60px; }
+  @media only screen and (min-width: 768px) {
+    .general-section {
+      height: 738px; } }
+  .general-section p {
+    color: #F8F8F8; }
+  .general-section .general-container {
     height: 100%;
     border: 1pt solid #e68f0b;
     background-color: #101010;
