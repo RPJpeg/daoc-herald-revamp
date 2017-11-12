@@ -5,16 +5,24 @@
     border-right: 1px solid $darkTan
     border-left: 1px solid $darkTan
     border-top: 1px solid $darkTan
-    padding: 24px
+    padding: 8px
     margin: 0
+    @include bp-small
+      padding: 24px
   .media:last-of-type
     border-bottom: 1px solid $darkTan
   .herald-entry-img
-    width: 168px
-    margin-right: 12px
+    width: 64px
+    margin-right: 6px
+    margin-top: 4px
     border: 1px solid $offBlack
     @include transition(.2s)
+    @include bp-small
+      width: 168px
+      margin-right: 12px
   .herald-entry-img:hover
     filter: brightness(110%)
   .herald-body-text
     color: $grey
+    margin-top: 6px
+    @include bp-small

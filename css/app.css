@@ -96,12 +96,10 @@ body {
       height: 850px; } }
 
 .news-background {
-  height: 1200px;
-  background-color: #101010; }
+  height: 60px; }
   @media only screen and (min-width: 768px) {
     .news-background {
-      height: 850px;
-      background-color: #1e1b15; } }
+      height: 150px; } }
 
 .forums-background {
   height: 1200px;
@@ -770,7 +768,7 @@ a:focus, a:active {
 
 .home-footer {
   background-color: rgba(30, 27, 21, 0.7);
-  margin: 0; }
+  margin: 100px 0 0 0; }
   .home-footer .social-box {
     width: 100%;
     height: 72px;
@@ -902,8 +900,8 @@ a:focus, a:active {
         width: 100%; }
 
 .news-main {
-  padding: 60px 0;
-  box-shadow: 1px 1px 1px #101010; }
+  padding: 0;
+  margin: 16px auto; }
   .news-main .news-container {
     height: 100%;
     background-color: #101010;
@@ -913,6 +911,13 @@ a:focus, a:active {
     padding: 12px; }
   .news-main .herald-header-title-box {
     margin: 24px 0; }
+    .news-main .herald-header-title-box h1 {
+      font-size: 24px;
+      font-size: 1.5rem; }
+      @media only screen and (min-width: 768px) {
+        .news-main .herald-header-title-box h1 {
+          font-size: 36px;
+          font-size: 2.25rem; } }
   .news-main .herald-header-filter-box {
     margin-top: 6px; }
     .news-main .herald-header-filter-box .dropdown {
@@ -947,23 +952,32 @@ a:focus, a:active {
   border-right: 1px solid #b3987d;
   border-left: 1px solid #b3987d;
   border-top: 1px solid #b3987d;
-  padding: 24px;
+  padding: 8px;
   margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .herald-entry .media {
+      padding: 24px; } }
 .herald-entry .media:last-of-type {
   border-bottom: 1px solid #b3987d; }
 .herald-entry .herald-entry-img {
-  width: 168px;
-  margin-right: 12px;
+  width: 64px;
+  margin-right: 6px;
+  margin-top: 4px;
   border: 1px solid #101010;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s; }
+  @media only screen and (min-width: 768px) {
+    .herald-entry .herald-entry-img {
+      width: 168px;
+      margin-right: 12px; } }
 .herald-entry .herald-entry-img:hover {
   filter: brightness(110%); }
 .herald-entry .herald-body-text {
-  color: #bfbfbf; }
+  color: #bfbfbf;
+  margin-top: 6px; }
 
 .forums-main {
   height: 1124px;

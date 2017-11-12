@@ -1,6 +1,6 @@
 .news-main
-  padding: 60px 0
-  box-shadow: 1px 1px 1px $offBlack
+  padding: 0
+  margin: 16px auto
   .news-container
     height: 100%
     background-color: $offBlack
@@ -10,6 +10,10 @@
     padding: 12px
   .herald-header-title-box
     margin: 24px 0
+    h1
+      @include font-size(24px)
+      @include bp-small
+        @include font-size(36px)
   .herald-header-filter-box
     margin-top: 6px
     .dropdown
