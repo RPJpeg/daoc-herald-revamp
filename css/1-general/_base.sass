@@ -62,6 +62,23 @@ body
 .action-button:hover
   background-color: rgba(133,24,9,0.5)
 
+.standard-button
+  background-color: rgba(16,16,16,0.1)
+  border: none
+  outline: none
+  @include font-size(14px)
+  color: $lightGrey
+  font-weight: 400
+  padding: 6px
+  width: 112px
+  outline: 1pt solid $offBlack
+  border: 1pt solid $grey
+  @include transition(.2s)
+
+.standard-button:hover
+  background-color: rgba(133,24,9,0.5)
+
+
 .home-animated-background
   height: 526px
   background-image: url("../images/hero-image-option.png")
@@ -95,12 +112,6 @@ body
     height: 850px
 
 .download-background
-  height: 1200px
-  background-color: $darkerBrown
-  @include bp-small
-    height: 850px
-
-.general-background
   height: 1200px
   background-color: $darkerBrown
   @include bp-small

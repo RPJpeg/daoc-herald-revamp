@@ -1,13 +1,37 @@
-.store-main
-  height: 1124px
-  padding: 60px 0
-  box-shadow: 1px 1px 1px $offBlack
-  @include bp-small
-    height: 738px
+.store-search-bar
+  i
+    color: $gold
+    margin-right: 6px
+  .store-search-input
+    width: 190px
+    padding: 4px
+    background-color: $grey
+    border: none
+    outline: none
+    @include border-radius(3px)
+
+.store-button
+  margin: 12px 0 12px 24px
+
+.store-grid-box
+  position: relative
+
+.store-grid-label
+  width: 100%
+  height: 50px
+  position: absolute
+  padding: 6px
+  left: 0
+  bottom: 0
+  background-color: $offBlack
   p
-    color: $offWhite
-  .store-container
-    height: 100%
-    border: 1pt solid $darkGold
-    background-color: $offBlack
-    box-shadow: 1px 1px 1px $offBlack
+    @include font-size(12px)
+
+.store-grid-price
+  width: 56px
+  height: 28px
+  position: absolute
+  padding: 6px
+  right: 0
+  top: 0
+  background-color: $offBlack

@@ -1,0 +1,137 @@
+.general-background
+  background-color: $darkerBrown
+  background-image: url(../images/stone-texture.png)
+  background-position: center
+  background-repeat: repeat-y
+  background-size: cover
+  border-bottom: 1pt solid $lightBrown
+  box-shadow: 1pt 1pt 1pt $darkerBrown
+  min-height: 76px
+  @include bp-small
+    min-height: 160px
+
+.general-caption
+  color: $darkTan
+  font-family: 'Roboto', sans-serif
+  margin: 12px 0
+  @include font-size(14px)
+
+.general-container-fluid
+
+.general-container
+  border: 1pt solid $lightTan
+  background-image: url('../images/vintage-concrete.png')
+  background-color: $offBlack
+  box-shadow: 1px 1px 1px $offBlack
+  margin: 36px auto
+  padding: 48px
+  h1
+    margin: 0 0 12px 0
+
+.general-header
+  background-image: url('../images/hero-image-option-blue.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  box-shadow: 1px 1px 1px $darkerBrown
+  .general-header-container
+    margin: 36px auto 0 auto
+    img
+      max-width: 100%
+      max-height: 300px
+    p
+      max-width: 250px
+      margin-top: 12px
+  .general-header-left-box
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+  .general-header-right-box
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-top: 7%
+
+.general-tall-image
+  max-height: 250px
+  width: auto
+  margin: 12px
+
+.general-wide-image
+  max-width: 250px
+  height: auto
+  margin: 12px
+
+.general-full-image-box
+  width: 90%
+  margin: 12px auto
+
+.general-full-image
+  width: 100%
+  height: auto
+
+.general-break
+  width: 90%
+  margin: 64px auto
+  border-color: $lightBrown
+
+.general-image-grid-box
+  width: 90%
+  margin: 32px auto
+  padding: 12px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+.general-grid-item
+  width: 140px
+  height: 140px
+  background-color: $darkerBrown
+  margin: 6px
+  overflow: hidden
+  @include bp-small
+    width: 200px
+    height: 200px
+  img
+    min-width: 140px
+    min-height: 140px
+    @include transition(.2s)
+    @include bp-small
+      min-width: 200px
+      min-height: 200px
+  img:hover
+    filter: brightness(120%)
+
+.general-spacer
+  width: 100%
+  padding: 0
+  margin: 0
+  height: 32px
+  visibility: hidden
+  @include bp-small
+    height: 48px
+
+.general-banner
+  width: 100%
+  margin: 0
+  padding: 0
+  height: 64px
+
+.gold-banner
+  background-color: $gold
+
+.image-banner
+  background-image: url(../images/stone-texture.png)
+  background-position: center
+  background-repeat: repeat-y
+  background-size: cover
+  border-top: 1pt solid $lightBrown
+  border-bottom: 1pt solid $lightBrown
+
+.general-footer
+  margin: 0
+  background-color: $darkerBrown
