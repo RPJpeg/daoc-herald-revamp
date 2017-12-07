@@ -1,0 +1,65 @@
+.community-header
+  background-image: url('../images/hero-image-option-blue.png')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  box-shadow: 1px 1px 1px $darkerBrown
+  .community-header-container
+    margin: 36px auto 0 auto
+    img
+      max-width: 100%
+      max-height: 300px
+    p
+      margin-top: 12px
+  .community-header-left-box
+    padding-left: 0
+    iframe
+      width: 100%
+      min-height: 300px
+      @include bp-small
+        width: 420px
+    .fa
+      color: $red
+
+  .community-header-right-box
+    padding: 0
+    .event-box
+      width: 100%
+      border: 1px solid $lightTan
+      height: 90px
+      padding: 0
+      .event-box-left
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        flex-direction: column
+        height: 100%
+        padding: 0
+        background-color: $darkRed
+      .event-box-right
+        padding: 0
+        background-color: $offBlack
+        max-height: 88px
+        display: flex
+        justify-content: left
+        align-items: center
+        height: 100%
+        p
+          margin: 0
+          padding: 6px
+          height: 100%
+          @include font-size(14px)
+
+    .event-box:first-of-type
+      margin-top: 32px
+
+    .event-box:last-child
+      margin-bottom: 48px
+
+
+  .community-header-left-box p
+    padding: 0 0 12px 0
+
+  .community-header .community-header-left-box a p
+    color: $gold
