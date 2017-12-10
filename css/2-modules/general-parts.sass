@@ -13,10 +13,16 @@
 .general-caption
   color: $darkTan
   font-family: 'Roboto', sans-serif
-  margin: 12px 0
+  margin: 4px 0
   @include font-size(14px)
 
 .general-container-fluid
+  margin: 36px auto 0 auto
+  padding: 48px 14px
+
+.dark-bg
+  background-image: url('../images/vintage-concrete.png')
+  background-color: $offBlack
 
 .general-container
   border: 1pt solid $lightTan
@@ -79,7 +85,7 @@
   border-color: $lightBrown
 
 .general-image-grid-box
-  width: 90%
+  width: 100%
   margin: 32px auto
   padding: 12px
   display: flex
@@ -88,21 +94,16 @@
   flex-wrap: wrap
 
 .general-grid-item
-  width: 140px
-  height: 140px
+  width: 200px
+  height: 200px
   background-color: $darkerBrown
   margin: 6px
   overflow: hidden
-  @include bp-small
-    width: 200px
-    height: 200px
+
   img
-    min-width: 140px
-    min-height: 140px
+    min-width: 200px
+    min-height: 200px
     @include transition(.2s)
-    @include bp-small
-      min-width: 200px
-      min-height: 200px
   img:hover
     filter: brightness(120%)
 

@@ -1,32 +1,27 @@
 .news-main
   padding: 0
   margin: 16px auto
-  .news-container
-    height: 100%
-    background-color: $offBlack
-    box-shadow: 1px 1px 1px $offBlack
-    padding: 24px
-  .herald-header
-    padding: 12px
-  .herald-header-title-box
-    margin: 24px 0
-    h1
-      @include font-size(24px)
-      @include bp-small
-        @include font-size(36px)
-  .herald-header-filter-box
-    margin-top: 6px
-    .dropdown
-      width: 172px
-      float: right
-    .dropdown-toggle
-      color: $grey
-      border: 1px solid $darkGrey
-      margin: 0 12px 0 0
-      padding: 6px
-    .dropdown-toggle:hover
-      text-decoration: none
-    .dropdown-menu
-      background-color: $grey
-      .divider
-        background-color: $darkGrey
+.herald-header
+  padding: 0 12px
+.herald-header-title-box
+  margin: 12px 0
+  h1
+    @include font-size(24px)
+    @include bp-small
+      @include font-size(36px)
+.herald-header-filter-box
+  margin-top: 6px
+  .dropdown
+    width: 172px
+    float: right
+  .dropdown-toggle
+    color: $grey
+    border: 1px solid $darkGrey
+    margin: 0 12px 0 0
+    padding: 6px
+  .dropdown-toggle:hover
+    text-decoration: none
+  .dropdown-menu
+    background-color: $grey
+    .divider
+      background-color: $darkGrey

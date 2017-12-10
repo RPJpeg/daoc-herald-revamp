@@ -1,11 +1,68 @@
 .community-forum-section
-  background-color: none
-  margin: 80px 0
+  box-shadow: 1pt 1pt 1pt $darkerBrown
+  p
+  h2
+    margin: 24px
+    @include bp-small
+      margin: 0 48px
 
-  .community-forum-box
-    border: 1pt solid $gold
-    height: 768px
-    background-color: $darkBrown
-    padding: 30px
-    p
-      color: $offWhite
+.community-forum-row
+  margin-bottom: 8px
+  border-bottom: 1px solid $lightBrown
+  padding-bottom: 24px
+  h4
+    margin-bottom: 12px
+    margin-left: 36px
+    @include bp-xsmall
+      margin-left: 12px
+  h5
+    @include font-size(12px)
+    color: $darkGrey
+
+.community-forum-button
+  margin: 8px
+
+.community-forum-replies-box
+  word-wrap: break-word
+  min-height: 50px
+  margin: 0
+  margin-left: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  flex-direction: column
+  @include bp-xsmall
+    margin-left: 0
+    border-left: none
+.community-forum-views-box
+  border-left: 1px solid $lightBrown
+  border-right: 1px solid $lightBrown
+  margin-left: 8px
+  word-wrap: break-word
+  min-height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  flex-direction: column
+  @include bp-xsmall
+    margin-left: 0
+    border-right: none
+
+
+.community-forum-time-box
+  margin-right: -8px
+  p
+    text-align: right
+  @include bp-xsmall
+    margin-top: 6px
+    padding-top: 6px
+
+.community-forum-details-box
+  margin: 0
+
+.community-forum-caption
+  color: $darkTan
+  margin: 0
+  @include font-size(14px)

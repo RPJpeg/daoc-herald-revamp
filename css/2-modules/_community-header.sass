@@ -5,28 +5,52 @@
   background-size: cover
   box-shadow: 1px 1px 1px $darkerBrown
   .community-header-container
-    margin: 36px auto 0 auto
+    margin: 52px auto 32px auto
     img
       max-width: 100%
       max-height: 300px
     p
       margin-top: 12px
+    h2
+      margin-top: 72px
+      text-shadow: 1px 1px 1px $offBlack
+      @include bp-small
+        margin-top: 24px
+    .fa-desktop
+      transform: translate(-5px,1px)
+    .fa-exclamation-triangle
+      transform: translate(-5px,-2px)
+
   .community-header-left-box
     padding-left: 0
+    a
+      color: $grey
+      @include transition(.2s)
+    a:hover
+      color: $darkGold
+      text-decoration: none
+    span
+      color: $grey
     iframe
       width: 100%
+      max-width: 500px
       min-height: 300px
+      border: 1px solid $grey
+      background-color: $offBlack
       @include bp-small
-        width: 420px
+        width: 500px
+        max-width: 100%
     .fa
-      color: $red
+      color: $darkRed
 
   .community-header-right-box
     padding: 0
     .event-box
       width: 100%
-      border: 1px solid $lightTan
-      height: 90px
+      border-left: 1px solid $tan
+      border-right: 1px solid $tan
+      border-top: 1px solid $tan
+      height: 64px
       padding: 0
       .event-box-left
         display: flex
@@ -36,7 +60,8 @@
         flex-direction: column
         height: 100%
         padding: 0
-        background-color: $darkRed
+        background-color: rgba(133, 24, 9, 0.8)
+        border-right: 1pt solid $tan
       .event-box-right
         padding: 0
         background-color: $offBlack
@@ -45,6 +70,7 @@
         justify-content: left
         align-items: center
         height: 100%
+        overflow: hidden
         p
           margin: 0
           padding: 6px
@@ -56,6 +82,7 @@
 
     .event-box:last-child
       margin-bottom: 48px
+      border-bottom: 1px solid $lightTan
 
 
   .community-header-left-box p
@@ -63,3 +90,8 @@
 
   .community-header .community-header-left-box a p
     color: $gold
+
+  .community-button
+    margin-bottom: 48px
+    @include bp-small
+      margin-bottom: 24px

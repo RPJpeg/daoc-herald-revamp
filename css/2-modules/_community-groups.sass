@@ -1,12 +1,30 @@
-.community-groups-section
-  margin: 80px 0
-  .community-groups-box
-    height: 210px
-    .groups-col
-      border: 1pt solid $red
-      padding: 0
-      height: 100%
-      p
+.community-social-fluid
+  background-image: url(../images/vintage-concrete-red.png)
+  border-top: 1px solid $darkerBrown
+  box-shadow: 1px 1px 1px $darkerBrown
+  .community-social
+    margin: 60px auto
+    ul
+      margin: 24px 0
+      a
+        @include transition(.2s)
+      a:hover
+        text-decoration: none
+      li
+        margin: 8px 0
+        list-style: none
+        padding-left: 8px
+        @include transition(.2s)
+        @include font-size(18px)
+        color: $darkGrey
+      li:hover
+        text-decoration: none
         color: $offWhite
-      img
-        width: 100%
+    .community-social-image-box
+      width: 100%
+      min-height: 250px
+      background-image: url(../images/hero-image-option.png)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      box-shadow: 1px 1px 1px $darkerBrown
