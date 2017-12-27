@@ -3,32 +3,33 @@
   padding: 0
   @include bp-small
     display: block
-    background-color: $gold
+    border-bottom: 1px solid #ffd57e
+    background-color: #333
     margin-bottom: 0
     padding: 0
-    height: 36px
+    height: 34px
     box-shadow: 1px 1px 1px $darkerBrown
     position: relative
-    z-index: 9999
-
+    z-index: 9997
+  #broadsword-logo
+    @include transition(.2s)
+  #broadsword-logo:hover
+    filter: brightness(125%)
   .hero-links
+    padding-top: 3px
     a
-      color: $brown
+      color: #e6e6e6
+      line-height: 30px
+      &:first-child
+        border-right: 1px solid #505050
     a:hover
-      color: $red
-      text-decoration: none
+      color: #ffd57e
     li
       display: inline
+      font-family: Mako, sans-serif
       line-height: 2.4
-      padding: 12px 0
-      font-weight: 400
+      font-size: 12px
+      &:first-child
+        margin-right: 20px
       &:last-child
-        margin-left: 12px
-      @include font-size(16px)
-      @include bp-small
-        &:last-child
-          margin-left: 18px
-      @include bp-medium
-        &:last-child
-          margin-left: 24px
-        @include font-size(18px)
+        margin-left: 16px

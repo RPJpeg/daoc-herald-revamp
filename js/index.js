@@ -51,12 +51,21 @@ $(document).ready(function() {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
   })
 
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 500) {
-        $("#fixedNav").addClass("fixed");
-    }
+  $(function() {
+      var show = $(".small-nav-hidden");
+      $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 500) {
+              show.removeClass('small-nav-hidden').addClass("small-nav-shown");
+          } else {
+              show.removeClass("small-nav-shown").addClass('small-nav-hidden');
+          }
+      });
   });
+
+  $("#back-to-top").click(function(){
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+  })
 
 
 });

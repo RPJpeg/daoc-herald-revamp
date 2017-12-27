@@ -229,36 +229,97 @@ a:focus, a:active {
   @media only screen and (min-width: 768px) {
     .header-home {
       display: block;
-      background-color: #f29c18;
+      border-bottom: 1px solid #ffd57e;
+      background-color: #333;
       margin-bottom: 0;
       padding: 0;
-      height: 36px;
+      height: 34px;
       box-shadow: 1px 1px 1px #1e1b15;
       position: relative;
-      z-index: 9999; } }
-  .header-home .hero-links a {
-    color: #363026; }
-  .header-home .hero-links a:hover {
-    color: #bf2000;
-    text-decoration: none; }
-  .header-home .hero-links li {
-    display: inline;
-    line-height: 2.4;
-    padding: 12px 0;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1rem; }
-    .header-home .hero-links li:last-child {
-      margin-left: 12px; }
-    @media only screen and (min-width: 768px) {
+      z-index: 9997; } }
+  .header-home #broadsword-logo {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .header-home #broadsword-logo:hover {
+    filter: brightness(125%); }
+  .header-home .hero-links {
+    padding-top: 3px; }
+    .header-home .hero-links a {
+      color: #e6e6e6;
+      line-height: 30px; }
+      .header-home .hero-links a:first-child {
+        border-right: 1px solid #505050; }
+    .header-home .hero-links a:hover {
+      color: #ffd57e; }
+    .header-home .hero-links li {
+      display: inline;
+      font-family: Mako, sans-serif;
+      line-height: 2.4;
+      font-size: 12px; }
+      .header-home .hero-links li:first-child {
+        margin-right: 20px; }
       .header-home .hero-links li:last-child {
-        margin-left: 18px; } }
-    @media only screen and (min-width: 992px) {
-      .header-home .hero-links li {
-        font-size: 18px;
-        font-size: 1.125rem; }
-        .header-home .hero-links li:last-child {
-          margin-left: 24px; } }
+        margin-left: 16px; }
+
+#fixedHeader {
+  display: none;
+  box-shadow: none; }
+  @media only screen and (min-width: 768px) {
+    #fixedHeader {
+      display: block;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999; } }
+  #fixedHeader #broadsword-logo-two {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  #fixedHeader #broadsword-logo-two:hover {
+    filter: brightness(125%); }
+
+.fixed-nav {
+  height: 34px;
+  width: 100%;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  background-image: url("../images/distress.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  border-top: 1pt solid #3d372d;
+  border-bottom: 1pt solid #3d372d;
+  box-shadow: 1px 1px 1px #1e1b15;
+  top: 34px; }
+  .fixed-nav .small-header-links li {
+    display: inline;
+    list-style: none; }
+
+.small-nav-shown {
+  visibility: hidden; }
+  @media only screen and (min-width: 768px) {
+    .small-nav-shown {
+      visibility: visible;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; } }
+
+.small-nav-hidden {
+  visibility: hidden;
+  top: -35px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .home-hero {
   height: 36px;
