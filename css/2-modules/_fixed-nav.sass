@@ -14,9 +14,19 @@
   top: 34px
 
   .small-header-links
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 6px
     li
       display: inline
       list-style: none
+      padding: 0 24px
+    a
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
 
 .small-nav-shown
   visibility: hidden
@@ -27,3 +37,9 @@
   visibility: hidden
   top: -35px
   @include transition(.5s)
+
+#megaMenu2
+  position: fixed
+  top: 0
+  left: 0
+  margin-top: 65px

@@ -18,11 +18,19 @@ $(document).ready(function() {
        event.stopPropagation();
   });
 
-  $( "#megaMenuTrig" ).click(function() {
+  $( "#megaMenuTrig" ).click(function(e) {
+    e.preventDefault();
   $( "#megaMenu" ).fadeToggle( "fast", function() {
     });
   $('#megaCarot').toggleClass("carot-rotated");
   $('#nav-game-button').toggleClass("menu-selected");
+
+  });
+
+  $( "#megaMenuTrig2" ).click(function(n) {
+    n.preventDefault();
+  $( "#megaMenu2" ).fadeToggle( "fast", function() {
+    });
   });
 
   $( "#megaMobileMenuTrig" ).click(function() {
@@ -55,13 +63,23 @@ $(document).ready(function() {
       var show = $(".small-nav-hidden");
       $(window).scroll(function() {
           var scroll = $(window).scrollTop();
-          if (scroll >= 500) {
+          if (scroll >= 200) {
               show.removeClass('small-nav-hidden').addClass("small-nav-shown");
           } else {
               show.removeClass("small-nav-shown").addClass('small-nav-hidden');
           }
       });
   });
+
+  $(function() {
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll <= 200) {
+      $('#megaMenu2').hide();
+      }
+    });
+  })
+
 
   $("#back-to-top").click(function(){
           $('html, body').animate({ scrollTop: 0 }, 'slow');

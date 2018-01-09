@@ -297,9 +297,20 @@ a:focus, a:active {
   border-bottom: 1pt solid #3d372d;
   box-shadow: 1px 1px 1px #1e1b15;
   top: 34px; }
-  .fixed-nav .small-header-links li {
-    display: inline;
-    list-style: none; }
+  .fixed-nav .small-header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px; }
+    .fixed-nav .small-header-links li {
+      display: inline;
+      list-style: none;
+      padding: 0 24px; }
+    .fixed-nav .small-header-links a {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .small-nav-shown {
   visibility: hidden; }
@@ -320,6 +331,12 @@ a:focus, a:active {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
+
+#megaMenu2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 65px; }
 
 .home-hero {
   height: 36px;
