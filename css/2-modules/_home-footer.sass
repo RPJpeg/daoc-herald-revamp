@@ -22,15 +22,21 @@
       i:hover
         color: $darkGold
       img
+        @include transition(.2s)
+      .broadsword-logo
         height: auto
         width: 96px
         margin-right: 8px
-        @include transition(.2s)
         @include bp-small
           margin-right: 4px
           width: 180px
-      img:hover
+      .ea-logo
+        filter: brightness(80%)
+        margin: 0 5px
+      .broadsword-logo:hover
         filter: brightness(120%)
+      .ea-logo:hover
+        filter: brightness(95%)
     .flex-list
       display: flex
       align-items: center

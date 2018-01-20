@@ -195,6 +195,9 @@ h5 {
 .dark-text {
   color: #101010; }
 
+.tan-text {
+  color: #ccb8a3; }
+
 .strong-text {
   font-weight: 500;
   color: #f29c18; }
@@ -252,6 +255,8 @@ a:focus, a:active {
       line-height: 30px; }
       .header-home .hero-links a:first-child {
         border-right: 1px solid #505050; }
+      .header-home .hero-links a:last-child {
+        border-left: 1px solid #505050; }
     .header-home .hero-links a:hover {
       color: #ffd57e; }
     .header-home .hero-links li {
@@ -892,20 +897,26 @@ a:focus, a:active {
       .home-footer .social-box li i:hover {
         color: #e68f0b; }
       .home-footer .social-box li img {
-        height: auto;
-        width: 96px;
-        margin-right: 8px;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s; }
+      .home-footer .social-box li .broadsword-logo {
+        height: auto;
+        width: 96px;
+        margin-right: 8px; }
         @media only screen and (min-width: 768px) {
-          .home-footer .social-box li img {
+          .home-footer .social-box li .broadsword-logo {
             margin-right: 4px;
             width: 180px; } }
-      .home-footer .social-box li img:hover {
+      .home-footer .social-box li .ea-logo {
+        filter: brightness(80%);
+        margin: 0 5px; }
+      .home-footer .social-box li .broadsword-logo:hover {
         filter: brightness(120%); }
+      .home-footer .social-box li .ea-logo:hover {
+        filter: brightness(95%); }
     .home-footer .social-box .flex-list {
       display: flex;
       align-items: center;
@@ -1014,7 +1025,7 @@ a:focus, a:active {
   font-size: 0.875rem; }
 
 .community-social-fluid {
-  background-image: url(../images/vintage-concrete-red.png);
+  background-color: #101010;
   border-top: 1px solid #1e1b15;
   box-shadow: 1px 1px 1px #1e1b15; }
   .community-social-fluid .community-social {
@@ -1032,7 +1043,7 @@ a:focus, a:active {
       .community-social-fluid .community-social ul li {
         margin: 8px 0;
         list-style: none;
-        padding-left: 8px;
+        padding-left: 2px;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
@@ -1046,7 +1057,7 @@ a:focus, a:active {
         color: #F8F8F8; }
     .community-social-fluid .community-social .community-social-image-box {
       width: 100%;
-      min-height: 250px;
+      min-height: 180px;
       background-image: url(../images/hero-image-option.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -1137,7 +1148,7 @@ a:focus, a:active {
           font-size: 14px;
           font-size: 0.875rem; }
     .community-header .community-header-right-box .event-box:first-of-type {
-      margin-top: 32px; }
+      margin-top: 42px; }
     .community-header .community-header-right-box .event-box:last-child {
       margin-bottom: 48px;
       border-bottom: 1px solid #ccb8a3; }
@@ -1150,6 +1161,22 @@ a:focus, a:active {
     @media only screen and (min-width: 768px) {
       .community-header .community-button {
         margin-bottom: 24px; } }
+
+.community-forum-section a:hover {
+  text-decoration: none; }
+
+.community-forum-section h2 {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .community-forum-section h2:hover {
+    color: #f29c18; }
+
+.community-forum-row a h4:hover {
+  text-decoration: underline;
+  color: #e68f0b; }
 
 .news-main {
   padding: 0;
@@ -1518,5 +1545,8 @@ a:focus, a:active {
 .general-footer {
   margin: 0;
   background-color: #1e1b15; }
+
+.support-spacer {
+  height: 32px; }
 
 /*# sourceMappingURL=app.css.map */

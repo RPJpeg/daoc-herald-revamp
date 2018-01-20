@@ -78,7 +78,7 @@
           @include font-size(14px)
 
     .event-box:first-of-type
-      margin-top: 32px
+      margin-top: 42px
 
     .event-box:last-child
       margin-bottom: 48px
@@ -95,3 +95,17 @@
     margin-bottom: 48px
     @include bp-small
       margin-bottom: 24px
+
+.community-forum-section a
+  &:hover
+    text-decoration: none
+
+.community-forum-section h2
+  @include transition(.2s)
+  &:hover
+    color: $gold
+
+.community-forum-row a h4
+  &:hover
+    text-decoration: underline
+    color: $darkGold
