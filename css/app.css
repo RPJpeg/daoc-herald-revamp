@@ -1515,6 +1515,9 @@ a:focus, a:active {
   .general-grid-item img:hover {
     filter: brightness(120%); }
 
+.general-list-group {
+  margin-left: 24px; }
+
 .general-spacer {
   width: 100%;
   padding: 0;
@@ -1524,6 +1527,16 @@ a:focus, a:active {
   @media only screen and (min-width: 768px) {
     .general-spacer {
       height: 48px; } }
+
+.general-half-spacer {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 24px;
+  visibility: hidden; }
+  @media only screen and (min-width: 768px) {
+    .general-half-spacer {
+      height: 32px; } }
 
 .general-banner {
   width: 100%;
