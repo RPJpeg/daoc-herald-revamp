@@ -202,6 +202,12 @@ h5 {
   font-weight: 500;
   color: #f29c18; }
 
+.accented-text {
+  font-style: italic;
+  color: #b3987d;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
 .my-caption {
   color: #b3987d;
   font-family: "Roboto", sans-serif;
@@ -1624,5 +1630,21 @@ a:focus, a:active {
 
 .cr-list-top {
   margin-bottom: 24px; }
+
+.lore-table-box {
+  border: 1px solid #3d372d;
+  min-height: 200px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .lore-table-box a {
+    margin: 8px 0;
+    font-size: 18px;
+    font-size: 1.125rem; }
+
+.lore-imgs {
+  max-width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
