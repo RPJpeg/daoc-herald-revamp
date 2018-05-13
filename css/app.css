@@ -232,6 +232,15 @@ a:focus, a:active {
   text-decoration: none;
   color: #e68f0b; }
 
+.table-head {
+  color: #bfbfbf;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400; }
+
+.table-head:hover {
+  color: #999; }
+
 .header-home {
   display: none;
   padding: 0; }
